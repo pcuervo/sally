@@ -300,3 +300,22 @@ address {
   font-style: normal;
   line-height: @line-height-base;
 }
+
+
+
+body{ font-family: 'Open Sans', sans-serif ; }
+
+p{
+  font-size: 14px;
+  @media (min-width: @screen-sm){ font-size: 16px;}
+}
+
+h1{
+  color: @primary;
+  .bg-color--primary &{ color: @light;}
+}
+
+
+// Font-size
+// -------------------------
+.fz-large{ font-size: 16px; }

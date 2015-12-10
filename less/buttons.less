@@ -164,3 +164,29 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+.btn-primary{
+  border: 1px solid @primary;
+  background-color: @light;
+  color: @primary;
+  border-radius: 0px;
+  width: 170px;
+  text-transform: uppercase;
+}
+
+.btn-secondary{
+  background-color: @primary;
+  color: @light;
+  border: 1px solid @light;
+}
+
+.aling--right-btn-primary{
+  @media (min-width: @screen-sm){ text-align: right;}
+}
+.aling--left-btn-primary{
+  @media (min-width: @screen-sm){ text-align: left;}
+}
+
+// btn-size
+
+.btn--large{ width: 200px;}
