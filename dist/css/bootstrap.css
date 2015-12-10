@@ -6817,6 +6817,14 @@ button.close {
   height: 200px;
   padding: 20px;
 }
+.box-smaller {
+  color: #f90e42;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
 @-ms-viewport {
   width: device-width;
 }
