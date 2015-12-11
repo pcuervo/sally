@@ -1564,6 +1564,9 @@ h1 {
 .bg-color--primary h1 {
   color: #fff;
 }
+.fz-xsmall {
+  font-size: 10px;
+}
 .fz-large {
   font-size: 16px;
 }
@@ -7077,6 +7080,9 @@ button.close {
     width: 200px;
   }
 }
+.bg-primary .logo {
+  margin-bottom: 5px;
+}
 .img-title {
   margin: 0 auto 40px;
 }
@@ -7106,5 +7112,14 @@ button.close {
   width: 50px;
   height: 50px;
   margin: 0 auto 40px;
+}
+.return {
+  margin-bottom: 40px;
+}
+.return a {
+  color: #fff;
+}
+.return img {
+  width: 30px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

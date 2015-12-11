@@ -7,6 +7,9 @@
   margin-bottom: (@margin-base*2);
   width: 160px;
   @media (min-width: @screen-sm){ width: 200px;}
+  .bg-primary &{
+  	margin-bottom: (@margin-base/4);
+  }
 }
 .img-title{
   margin: 0 auto (@margin-base*2);
@@ -35,4 +38,10 @@
 	width: 50px;
 	height: 50px;
 	margin:0 auto (@margin-base*2);
+}
+
+.return{
+	margin-bottom: (@margin-base*2);
+	& a{ color: @light;}
+	& img{ width: 30px; }
 }
