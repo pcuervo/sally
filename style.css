@@ -7120,10 +7120,10 @@ button.close {
   margin: 0 auto;
 }
 .bg-home {
-  background-image: url('../../img/home.jpg');
-  background-size: 200%;
+  background-image: url('img/home.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center center;
   height: 100vh;
 }
 @media (min-width: 480px) {
