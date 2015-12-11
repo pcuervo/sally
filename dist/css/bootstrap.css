@@ -7074,21 +7074,6 @@ button.close {
 .img-title {
   margin: 0 auto 40px;
 }
-@media (min-width: 768px) {
-  .img-title {
-    width: 80%;
-  }
-}
-@media (min-width: 992px) {
-  .img-title {
-    width: 60%;
-  }
-}
-@media (min-width: 1200px) {
-  .img-title {
-    width: 50%;
-  }
-}
 .bg-home {
   background-image: url('../../img/home.jpg');
   background-size: 100%;
@@ -7099,5 +7084,10 @@ button.close {
   background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   height: 100%;
+}
+.ico-small {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 40px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
