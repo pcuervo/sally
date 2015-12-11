@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+
+		<title>Sally</title>
+	</head>
+	<body class="[ bg-primary ][ color-light ]">
+		<div class="[ container ][ text-center ]">
+			<img href="index.html" class="[ logo ]" src="img/logo.jpg">
+				<h1 class="[ color-light hidden ]">Comparte tu belleza</h1>
+				<div class="[ margin-top--large margin-bottom ]">
+					<img class="[ img-responsive img-title ][ margin-auto ]" src="img/title-1.png">
+				</div>
+
+			<section >
+				<div class="[ row ]">
+
+					<div class="[ col-xs-12 ][ margin-bottom ]">
+						<div style="text-align:center"> 
+							<!--
+							<button onclick="playPause()">Play/Pause</button> 
+							<button onclick="makeBig()">Big</button>
+							<button onclick="makeSmall()">Small</button>
+							<button onclick="makeNormal()">Normal</button>
+							<br><br>-->
+							<video id="video1" width="100%" height="100%" controls>
+								<source src="movie.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+
+					<div class="[ col-xs-12 ][ margin-bottom ]">
+						<a type="submit" href="#" class="[ btn btn-primary ]">Volver a grabar</a>
+						<a type="submit" href="#" class="[ btn btn-primary ]">Publicar</a>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+
+		<script> 
+			var myVideo = document.getElementById("video1"); 
+
+			function playPause() { 
+			    if (myVideo.paused) 
+			        myVideo.play(); 
+			    else 
+			        myVideo.pause(); 
+			} 
+
+			function makeBig() { 
+			    myVideo.width = 560; 
+			} 
+
+			function makeSmall() { 
+			    myVideo.width = 320; 
+			} 
+
+			function makeNormal() { 
+			    myVideo.width = 420; 
+			} 
+			
+
+		</script> 
+	</body>
+</html>
