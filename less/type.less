@@ -350,9 +350,21 @@ h1{
   .bg-color--primary &{ color: @light;}
 }
 
+.text-name{
+  font-size: 16px;
+  color: @primary;
+  font-weight: bold;
+   @media (min-width: @screen-sm){ font-size: 18px;}
+   &+p{
+    font-size: 14px;
+    @media (min-width: @screen-sm){ font-size: 16px;}
+   }
+}
 
 // Font-size
 // -------------------------
 .fz-xsmall{ font-size: 10px;}
-.fz-large{ font-size: 16px; }
+.fz-large{ font-size: 16px;
+    @media (min-width: @screen-sm){ font-size: 18px;}
+ }
 

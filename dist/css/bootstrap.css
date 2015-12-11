@@ -1564,11 +1564,34 @@ h1 {
 .bg-color--primary h1 {
   color: #fff;
 }
+.text-name {
+  font-size: 16px;
+  color: #f90e42;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .text-name {
+    font-size: 18px;
+  }
+}
+.text-name + p {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .text-name + p {
+    font-size: 16px;
+  }
+}
 .fz-xsmall {
   font-size: 10px;
 }
 .fz-large {
   font-size: 16px;
+}
+@media (min-width: 768px) {
+  .fz-large {
+    font-size: 18px;
+  }
 }
 code,
 kbd,
@@ -3541,6 +3564,9 @@ input[type="button"].btn-block {
   background-color: #f90e42;
   color: #fff;
   border: 1px solid #fff;
+}
+.btn-noborder {
+  border: 0px;
 }
 @media (min-width: 768px) {
   .aling--right-btn-primary {
@@ -7072,7 +7098,7 @@ button.close {
 }
 .logo {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   width: 160px;
 }
 @media (min-width: 768px) {
@@ -7080,11 +7106,8 @@ button.close {
     width: 200px;
   }
 }
-.bg-primary .logo {
-  margin-bottom: 5px;
-}
 .img-title {
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 .bg-home {
   background-image: url('../../img/home.jpg');
@@ -7114,12 +7137,31 @@ button.close {
   margin: 0 auto 40px;
 }
 .return {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .return a {
+  color: #f90e42;
+}
+.bg-primary .return a {
   color: #fff;
 }
 .return img {
   width: 30px;
+}
+.box-img {
+  width: 100%;
+  height: 200px;
+}
+.img-user {
+  background-image: url('../../img/mujer.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 180px;
+}
+.bg-opacity-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
