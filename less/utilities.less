@@ -160,26 +160,8 @@
 .margin-top-bottom--small{ margin-top: (@margin-base/2); margin-bottom: (@margin-base/2); }
 .margin-top-bottom--large{ margin-top: (@margin-base*2); margin-bottom: (@margin-base*2); }
 
-
-.logo{ margin-top: (@margin-base*2); }
-
-// box
-
-.box-light{
-  padding: (@padding-large-vertical) (@padding-large-vertical*2);
-  background-color: @light;
-  width: 60%;
-  margin: auto;
-  border-radius: @border-radius-xlarge;
-  @media (max-width: @screen-xs){
-    width:100%;
-    padding: (@padding-large-vertical);
-  }
-  & .form-control {
-    background-color: @gray-lighter;
-    color: @gray-base;
-  }
-}
+// Box
+// -------------------------
 
 .box-gray{
   width: 100%;
@@ -192,6 +174,7 @@
   background-color: @light;
   width: 30px;
   height: 30px;
-  vertical-align: middle;
   text-align: center;
+  font-weight: bold;
 }
+
