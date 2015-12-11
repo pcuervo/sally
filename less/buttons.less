@@ -180,10 +180,6 @@ input[type="button"] {
   border: 1px solid @light;
 }
 
-.btn-noborder{
-  border:0px;
-}
-
 .aling--right-btn-primary{
   @media (min-width: @screen-sm){ text-align: right;}
 }
@@ -194,3 +190,13 @@ input[type="button"] {
 // btn-size
 
 .btn--large{ width: 200px;}
+
+.btn{
+  &:hover,
+  &:focus,
+  &:active,
+  {
+    background-color: @primary-dark;
+    border:1px solid @light;
+  }
+}
