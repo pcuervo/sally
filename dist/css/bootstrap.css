@@ -1583,6 +1583,9 @@ h1 {
     font-size: 16px;
   }
 }
+a:hover {
+  color: #b6052c;
+}
 .fz-xsmall {
   font-size: 10px;
 }
@@ -1593,6 +1596,9 @@ h1 {
   .fz-large {
     font-size: 18px;
   }
+}
+.prueba {
+  color: #b6052c;
 }
 code,
 kbd,
@@ -3566,9 +3572,6 @@ input[type="button"].btn-block {
   color: #fff;
   border: 1px solid #fff;
 }
-.btn-noborder {
-  border: 0px;
-}
 @media (min-width: 768px) {
   .aling--right-btn-primary {
     text-align: right;
@@ -3581,6 +3584,12 @@ input[type="button"].btn-block {
 }
 .btn--large {
   width: 200px;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #b6052c;
+  border: 1px solid #fff;
 }
 .fade {
   opacity: 0;
