@@ -1522,6 +1522,9 @@ body {
 }
 p {
   font-size: 14px;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 768px) {
   p {
@@ -3045,7 +3048,7 @@ select[multiple].input-lg {
 .form-tutorial .form-control {
   border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 40px;
+  height: 35px;
   color: #fff;
   text-align: center;
 }
@@ -3064,6 +3067,9 @@ select[multiple].input-lg {
   .input-search {
     width: 200px;
   }
+}
+.form-tutorial .input-group-addon {
+  border-radius: 0px;
 }
 .btn {
   display: inline-block;
@@ -3556,6 +3562,9 @@ input[type="button"].btn-block {
   border-radius: 0px;
   width: 170px;
   text-transform: uppercase;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-style: normal;
 }
 .btn:hover,
 .btn:focus,
@@ -7139,9 +7148,7 @@ button.close {
   height: 100%;
 }
 .ico-small {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 40px;
+  width: 35px;
 }
 .return a {
   color: #f90e42;
