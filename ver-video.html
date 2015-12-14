@@ -50,20 +50,31 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body class="[ bg-primary ][ color-light ]">
-		<div class="[ container ][ text-center ]">
-			<img href="index.html" class="[ logo ]" src="img/logo.jpg">
-				<h1 class="[ color-light hidden ]">Comparte tu belleza</h1>
-				<div class="[ margin-top--large margin-bottom ]">
-					<img class="[ img-responsive img-title ][ margin-auto ]" src="img/title-1.png">
-				</div>
-
-			<section >
+		<header class="[ container ]">
+			<a href="index.html">
+				<img class="[ logo ]" src="img/logo.jpg">
+			</a>
+			<span class="[ hidden-xs ][ pull-right ]">
+				<a href="#"><img src="img/play1.png"></a>
+				<a href="#"><img src="img/instagram1.png"></a>
+				<a href="#"><img src="img/twitter1.png"></a>
+				<a href="#"><img src="img/facebook1.png"></a>
+			</span>
+			<div class="[ return ]">
+				<a href="comparte.html">
+					<img  src="img/atras.png">
+					<p class="[ fz-xsmall ]">atràs</p>
+				</a>
+			</div>
+		</header>
+			<section class="[ container ][ text-center ]">
+				<img class="[ img-responsive img-title ]" src="img/title-1.png">
 				<div class="[ row ]">
 
 					<div class="[ col-xs-12 ][ margin-bottom ]">
-						<div style="text-align:center"> 
+						<div style="text-align:center">
 							<!--
-							<button onclick="playPause()">Play/Pause</button> 
+							<button onclick="playPause()">Play/Pause</button>
 							<button onclick="makeBig()">Big</button>
 							<button onclick="makeSmall()">Small</button>
 							<button onclick="makeNormal()">Normal</button>
@@ -86,29 +97,29 @@
 
 		</div>
 
-		<script> 
-			var myVideo = document.getElementById("video1"); 
+		<script>
+			var myVideo = document.getElementById("video1");
 
-			function playPause() { 
-			    if (myVideo.paused) 
-			        myVideo.play(); 
-			    else 
-			        myVideo.pause(); 
-			} 
+			function playPause() {
+			    if (myVideo.paused)
+			        myVideo.play();
+			    else
+			        myVideo.pause();
+			}
 
-			function makeBig() { 
-			    myVideo.width = 560; 
-			} 
+			function makeBig() {
+			    myVideo.width = 560;
+			}
 
-			function makeSmall() { 
-			    myVideo.width = 320; 
-			} 
+			function makeSmall() {
+			    myVideo.width = 320;
+			}
 
-			function makeNormal() { 
-			    myVideo.width = 420; 
-			} 
-			
+			function makeNormal() {
+			    myVideo.width = 420;
+			}
 
-		</script> 
+
+		</script>
 	</body>
 </html>
