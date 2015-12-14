@@ -49,21 +49,26 @@ header span img{
 //Img user
 .box-img{
   width: 100%;
-  height: 200px;
+  height:intrinsinc;
 }
 
 .img-user{
-	background-image: url('../../img/mujer.jpg');
-	background-size: 120%;
+	background-image: url('img/mujer.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
     background-position: center center;
-	height: inherit;
 }
 
 .bg-opacity-dark{
 	background-color: rgba(0, 0, 0, 0.7);
 	width: 100%;
-	height: 100%;
-	padding: @padding-large-vertical;
+	height: 25vh;
+
+	&:hover,
+	&:focus,
+	&.focus {
+	background: none;
+	border: solid 2px @primary 
+	}
 }
 

@@ -3057,7 +3057,7 @@ select[multiple].input-lg {
   background-image: url('img/find.png');
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 50px;
+  background-size: 40px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -7183,20 +7183,24 @@ header span img {
 }
 .box-img {
   width: 100%;
-  height: 200px;
+  height: intrinsinc;
 }
 .img-user {
-  background-image: url('../../img/mujer.jpg');
-  background-size: 120%;
+  background-image: url('img/mujer.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: inherit;
 }
 .bg-opacity-dark {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  height: 25vh;
+}
+.bg-opacity-dark:hover,
+.bg-opacity-dark:focus,
+.bg-opacity-dark.focus {
+  background: none;
+  border: solid 2px #f90e42;
 }
 header {
   padding: 48px 0 0;
