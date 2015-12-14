@@ -79,7 +79,7 @@
 			<!-- -->
 			<div class="[ row ]">
 				<div class="[ col-sm-4 ]"></div>
-				<div class="[ text-center ][ color-primary ][ margin-bottom ][ col-xs-12 col-sm-4 ]">
+				<div class="[ text-center ][ color-primary ][ margin-top margin-bottom ][ col-xs-12 col-sm-4 ]">
 					<p><strong>Todos tenemos algo que compartir.</strong></p>
 					<p>Conoce los tips de belleza que las mujeres de México están compartiendo con nosotros</p>
 				</div>
@@ -88,27 +88,36 @@
 			<!-- buscar -->
 			<div class="[ navbar-form ][ text-center ][ margin-bottom--large ]" role="search">
 				<div class="[ form-group ]">
-					<input type="text" class="[ input-search ]" placeholder="Busco consejos de...">
+					<input type="text" class="[ input-search ][ find ][ large ]" placeholder="Busco consejos de...">
 					<div class="[ visible-xs ][ margin-bottom ]"></div>
 				</div>
 			</div>
+
 			<!--/filtros / paginacion-->
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-9 ]">
-					<div class="[ color-primary ][ text-center ][ margin-bottom--large ]">
-						<p><span class=" [ margin-right ] "><strong>Filtros:</strong></span>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
-						</p>
-					</div>
+				<div class="[ col-xs-3 col-sm-1  ]">
+					<p class="[ margin-right ][ text-uppercase ]">
+						<strong><a class="[ color-primary ][ collapsed ]" role="button" data-toggle="collapse" data-parent="#accordion" href="#verfiltros" aria-expanded="false" aria-controls="verfiltros">Filtros</a></strong>
+					</p>
 				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<ul class="[ pagination ][ color-primary ]">
+				<div class="[ col-xs-9 col-sm-6 ][ text-justify ]" >
+					<p id="verfiltros" class="[ panel-collapse collapse ]" role="tabpanel">
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+						<a class="[ color-primary ][ margin-right--xsmall ]" href="">Categoría</a>
+					</p>
+				</div>
+				<div class="[ hidden-xs ][ col-sm-5 ][ text-right ]">
+					<ul class="[ pagination large ][ color-primary ]">
 						<li>
 							<a href="#" aria-label="Previous">
 								<span aria-hidden="true">&laquo;</span>
@@ -127,134 +136,180 @@
 					</ul>
 				</div>
 			</div><!--/row: filtros / paginacion-->
-			
+
 		</div> <!--/container-->
 
 		<section>
-			<div class="[][ text-center ]">
+			<div class="[  ][ text-center ]">
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]" type="button" data-toggle="modal" data-target="#tutoriales3">
+							<div class="[ center-full ][  ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
+					<div class="[ img-user ]">
+						<div class="[ bg-opacity-dark ][ relative ]">
+							<div class="[ center-full ]">
+								<p class="[ text-uppercase color-primary ]"><strong>Usuario</strong></p>
+								<p class="[ color-light ]">Título Categoría</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
-			<div class="[ ][ text-center ]">
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
-					<div class="[ box-img ]">
-						<div class="[ img img-user ]">
-							<div class="[ bg-opacity-dark ]">
-								<p class="[ text-name ]">Usuario</p>
-								<p>Título Categoría</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</section>
+
+		<!-- modal-tutorial -->
+		<div id="tutoriales3" class="modal fade " tabindex="-1" role="dialog">
+			<div class="[ modal-dialog ]">
+				<div class="[ center-full][ margin-top--xlarge ]">
+					<div class="[ text-center ]">
+						<video id="video1" width="100%" height="100%" controls>
+							<source src="movie.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							 <source type="video/webm" src="video.webm" />
+							Your browser does not support the video tag.
+						</video>
+						<div class="[ margin ]">
+							<img src="img/share.png">
+						</div>
+						<div>
+							<a class="[ margin-right ]" href="#"><img src="img/twitter1.png"></a>
+							<a href="#"><img src="img/facebook1.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script>
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				imgToSvg();
+				/**
+				 * Triggered events
+				**/
+				//$('#send_btn').popover({content: 'Thank You'},'click');
+			});
+		</script>
+
 	</body>
+
+	
+
 </html>
+
+
