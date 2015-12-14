@@ -1299,6 +1299,9 @@ mark,
   background-color: #fcf8e3;
   padding: .2em;
 }
+.large {
+  font-size: 18px;
+}
 .text-left {
   text-align: left;
 }
@@ -3049,6 +3052,15 @@ select[multiple].input-lg {
   height: 35px;
   color: #fff;
   text-align: center;
+}
+.find {
+  background-image: url('img/find.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .input-search {
   border-radius: 25px;
@@ -4813,8 +4825,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination {
   display: inline-block;
-  padding-left: 0;
-  margin: 20px 0;
   border-radius: 0px;
 }
 .pagination > li {
@@ -4827,7 +4837,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #777777;
+  color: #f90e42;
   background-color: #fff;
   margin-left: -1px;
 }
@@ -4848,6 +4858,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:focus {
   z-index: 2;
   color: #f90e42;
+  font-weight: bold ;
 }
 .pagination > .active > a,
 .pagination > .active > span,
