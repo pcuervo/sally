@@ -1560,7 +1560,12 @@ a:hover {
   color: #b6052c;
 }
 .fz-xsmall {
-  font-size: 10px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .fz-xsmall {
+    font-size: 16px;
+  }
 }
 .prueba {
   color: #b6052c;
@@ -6664,6 +6669,9 @@ button.close {
 .align-bottom {
   vertical-align: bottom;
 }
+.underline {
+  text-decoration: underline;
+}
 .color-primary {
   color: #f90e42;
 }
@@ -6934,7 +6942,17 @@ button.close {
 @media (max-width: 768px) {
   .box-center--2 {
     height: 600px;
-    margin-top: -239px;
+    margin-top: -140px;
+  }
+}
+.box-center--3 {
+  height: 318px;
+  margin-top: -98px;
+}
+@media (max-width: 768px) {
+  .box-center--3 {
+    height: 200px;
+    margin-top: -66px;
   }
 }
 @-ms-viewport {
@@ -7204,6 +7222,11 @@ header span img {
   padding: 20px;
 }
 header {
-  padding: 48px 0 0;
+  padding-top: 48px;
+}
+@media (max-width: 768px) {
+  header {
+    padding-top: 24px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */

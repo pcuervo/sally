@@ -1,3 +1,6 @@
 header{
-	padding: (@padding-base-vertical*8) 0 0;
+	padding-top: (@padding-base-vertical*8);
+	@media (max-width: @screen-sm) {
+		padding-top: (@padding-base-vertical*4);
+	}
 }
