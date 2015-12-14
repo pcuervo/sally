@@ -59,6 +59,8 @@
 .absolute{ position: absolute; }
 .fixed{ position: fixed; }
 
+.bottom-0 {bottom:0}
+
 // Displays
 .block{ display: block; }
 .inline{ display: inline; }
@@ -68,6 +70,10 @@
 .align-top{ vertical-align: top; }
 .align-middle{ vertical-align: middle; }
 .align-bottom{ vertical-align: bottom; }
+
+// Text-decoration
+// -------------------------
+.underline { text-decoration: underline;}
 
 
 // Color
@@ -166,11 +172,17 @@
 .margin-right--xsmall{ margin-right: (@margin-base/4); }
 .margin-right--small{ margin-right: (@margin-base/2); }
 .margin-right--large{ margin-right: (@margin-base*2); }
+.margin-right--desktop{
+  @media (min-width: @screen-sm) {margin-right: (@margin-base);}
+}
 
 .margin-left{ margin-left: @margin-base; }
 .margin-left--xsmall{ margin-left: (@margin-base/4); }
 .margin-left--small{ margin-left: (@margin-base/2); }
 .margin-left--large{ margin-left: (@margin-base*2); }
+.margin-left--desktop{
+  @media (min-width: @screen-sm) {margin-left: (@margin-base); }
+}
 
 .margin-top-bottom{ margin-top: @margin-base; margin-bottom: @margin-base; }
 .margin-top-bottom--small{ margin-top: (@margin-base/2); margin-bottom: (@margin-base/2); }
@@ -198,10 +210,37 @@
   position: absolute;
   top: 50%;
   width: 100%;
+}
+.box-center--1 {
   height: 168px;
   margin-top: -84px;
   @media (max-width: @screen-sm) {
   height: 235px;
   margin-top: -117.5px;
+  }
+}
+.box-center--2 {
+  height: 318px;
+  margin-top: -98px;
+  @media (max-width: @screen-sm) {
+  height: 600px;
+  margin-top: -140px;
+  }
+}
+
+.box-center--3 {
+  height: 318px;
+  margin-top: -98px;
+  @media (max-width: @screen-sm) {
+  height: 200px;
+  margin-top: -66px;
+  }
+}
+.box-center--4 {
+  height: 370px;
+  margin-top: -144px;
+  @media (max-width: @screen-sm) {
+  height: 358px;
+  margin-top: -142px;
   }
 }

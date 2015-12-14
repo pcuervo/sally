@@ -346,13 +346,17 @@ a:hover{
 
 // Font-size
 // -------------------------
-.fz-xsmall{ font-size: 10px;}
-
-.prueba{
- color:@primary-dark;
+.fz-xsmall{
+  font-size: 14px;
+  @media (min-width: @screen-sm){ font-size: 16px;}
+}
+.fz-xxsmall{
+  font-size: 12px;
 }
 
 // -------------------------
 .line-height{ line-height: 10px;}
+
+.letter-spacing--small{ letter-spacing: 1px;}
 
 .word-spacing{ word-spacing: 5px;}

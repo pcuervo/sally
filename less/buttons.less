@@ -184,10 +184,6 @@ input[type="button"] {
   @media (min-width: @screen-sm){ text-align: left;}
 }
 
-// btn-size
-
-.btn--large{ width: 200px;}
-
 .btn{
   border-radius: 0px;
   width: 170px;
@@ -202,5 +198,22 @@ input[type="button"] {
   {
     background-color: @primary-dark;
     border:1px solid @light;
+  }
+}
+
+// btn-size
+
+.btn--large{ width: 200px;}
+.btn--auto{ width: auto; }
+
+
+.btn-movil{
+  @media (max-width: 400px){
+    font-size: 10px;
+    width: 130px;
+  }
+   @media (max-width: 300px){
+    font-size: 8px;
+    width: auto;
   }
 }
