@@ -3533,14 +3533,11 @@ input[type="button"].btn-block {
   border: 1px solid #f90e42;
   background-color: #fff;
   color: #f90e42;
-  border-radius: 0px;
-  width: 170px;
-  text-transform: uppercase;
 }
 .btn-secondary {
+  border: 1px solid #fff;
   background-color: #f90e42;
   color: #fff;
-  border: 1px solid #fff;
 }
 @media (min-width: 768px) {
   .aling--right-btn-primary {
@@ -3554,6 +3551,11 @@ input[type="button"].btn-block {
 }
 .btn--large {
   width: 200px;
+}
+.btn {
+  border-radius: 0px;
+  width: 170px;
+  text-transform: uppercase;
 }
 .btn:hover,
 .btn:focus,
