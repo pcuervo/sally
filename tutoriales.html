@@ -51,48 +51,85 @@
 	</head>
 	<body>
 		<header class="[ container ]">
-			<a href="index.html">
-				<img class="[ logo ]" src="img/logo1.png">
-			</a>
-			<span class="[ hidden-xs ][ pull-right ]">
-				<a href="#"><img src="img/play.png"></a>
-				<a href="#"><img src="img/instagram.png"></a>
-				<a href="#"><img src="img/twitter.png"></a>
-				<a href="#"><img src="img/facebook.png"></a>
-			</span>
-			<div class="[ return ]">
-				<a href="comparte.html">
-					<img  src="img/atras-2.png">
-					<p class="[ fz-xsmall ]">atràs</p>
-				</a>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-3 ]">
+					<a href="index.html">
+						<img class="[ logo ]" src="img/logo1.png">
+					</a>
+					<div class="[ return ]">
+						<a href="comparte.html">
+							<img  src="img/atras-2.png">
+							<p class="[ fz-xsmall ]">atràs</p>
+						</a>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-6 ][ margin-top--large ]" >
+					<img class="[ img-responsive img-title ]" src="img/title-2.png">
+				</div>
+				<span class="[ hidden-xs ][ pull-right ]">
+					<a href="#"><img src="img/play.png"></a>
+					<a href="#"><img src="img/instagram.png"></a>
+					<a href="#"><img src="img/twitter.png"></a>
+					<a href="#"><img src="img/facebook.png"></a>
+				</span>
 			</div>
-			<img class="[ img-responsive img-title ]" src="img/title-2.png">
 		</header>
 
-		<section class="[ container ]">
-			<div class="[ text-center ][ color-primary ][ margin-bottom ][ col-sm-4 col-sm-offset-4 col-lg-2 col-lg-offset-5 ]">
-				<p><strong>Todos tenemos algo que compartir.</strong></p>
-				<p>Conoce los tips de belleza que las mujeres de México están compartiendo con nosotros</p>
+		<div class="[ container ]">
+			<!-- -->
+			<div class="[ row ]">
+				<div class="[ col-sm-4 ]"></div>
+				<div class="[ text-center ][ color-primary ][ margin-bottom ][ col-xs-12 col-sm-4 ]">
+					<p><strong>Todos tenemos algo que compartir.</strong></p>
+					<p>Conoce los tips de belleza que las mujeres de México están compartiendo con nosotros</p>
+				</div>
+				<div class="[ col-sm-4 ]"></div>
 			</div>
-			<form class="[ navbar-form ][ text-center ][ margin-bottom--large ]" role="search">
+			<!-- buscar -->
+			<div class="[ navbar-form ][ text-center ][ margin-bottom--large ]" role="search">
 				<div class="[ form-group ]">
 					<input type="text" class="[ input-search ]" placeholder="Busco consejos de...">
 					<div class="[ visible-xs ][ margin-bottom ]"></div>
-					<button type="submit" class="[ btn btn-secondary ]">Buscar</button>
 				</div>
-			</form>
-			<div class="clearfix"></div>
-			<div class="[ color-primary ][ text-center ][ margin-bottom--large ][ fz-large ]">
-				<span><strong>Filtros:</strong></span>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
-				<a class="[ color-primary ]" href="">Categoría</a>
 			</div>
-		</section>
+			<!--/filtros / paginacion-->
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-9 ]">
+					<div class="[ color-primary ][ text-center ][ margin-bottom--large ]">
+						<p><span class=" [ margin-right ] "><strong>Filtros:</strong></span>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+							<a class="[ color-primary ][ margin-right ]" href="">Categoría</a>
+						</p>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-3 ]">
+					<ul class="[ pagination ][ color-primary ]">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!--/row: filtros / paginacion-->
+			
+		</div> <!--/container-->
+
 		<section>
 			<div class="[][ text-center ]">
 				<div class="[ col-xs-6 col-sm-2 ][ no-padding ]">
@@ -218,25 +255,6 @@
 					</div>
 				</div>
 			</div>
-			<nav class="[ text-center ]">
-				<ul class="[ pagination ]">
-					<li>
-						<a href="#" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-						</a>
-					</li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li>
-						<a href="#" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
 		</section>
 	</body>
 </html>

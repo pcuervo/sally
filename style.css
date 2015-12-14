@@ -1562,14 +1562,6 @@ a:hover {
 .fz-xsmall {
   font-size: 10px;
 }
-.fz-large {
-  font-size: 16px;
-}
-@media (min-width: 768px) {
-  .fz-large {
-    font-size: 18px;
-  }
-}
 .prueba {
   color: #b6052c;
 }
@@ -3565,7 +3557,7 @@ input[type="button"].btn-block {
   border-radius: 0px;
   width: 170px;
   text-transform: uppercase;
-  font-family: 'futura';
+  font-family: 'futura-pt';
   font-weight: 300;
   font-style: normal;
 }
