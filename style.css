@@ -6992,6 +6992,16 @@ button.close {
     margin-top: -142px;
   }
 }
+.box-center--5 {
+  height: 235px;
+  margin-top: -76.5px;
+}
+@media (max-width: 768px) {
+  .box-center--5 {
+    height: 232px;
+    margin-top: -79px;
+  }
+}
 @-ms-viewport {
   width: device-width;
 }
