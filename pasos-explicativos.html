@@ -49,41 +49,54 @@
 		<script src="https://use.typekit.net/lus4pyy.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
-
-	<body>
-		<div class="[ bg-home ]">
-			<div class="[ bg-opacity ]">
-				<header class="[ container ]">
-					<a href="index.html">
-						<img class="[ logo ]" src="img/logo1.png">
-					</a>
-					<span class="[ hidden-xs ][ pull-right ]">
-						<a href="#"><img src="img/play.png"></a>
-						<a href="#"><img src="img/instagram.png"></a>
-						<a href="#"><img src="img/twitter.png"></a>
-						<a href="#"><img src="img/facebook.png"></a>
-					</span>
-					<!-- <span class="[ visible-xs ][ pull-right ]">
-							<img src="icons/navigation.svg" class="[ svg ][ icon icon--min icon--stroke ][ color-secondary ]" alt="">
-					</span> -->
-				</header>
-				<section class="[ container ][ box-center box-center--1 ][ text-center ]">
-					<img class="[ img-responsive img-title ][ margin-bottom--xlarge ]" src="img/title-2.png">
-					<div class="[ margin-bottom ]">
-						<p class="[ fz-large ][ no-margin ]"><strong>¿Te gustaría contagiar al mundo con tu belleza?</strong></p>
-						<p class="">Graba tu tutorial siguiendo las instrucciones y comparte los mejores tips.</p>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ][ aling--right-btn-primary ]">
-							<a type="submit" href="pasos.html" class="[ btn btn-secondary ][ no-border ]"><strong>Graba tutorial</strong></a>
-							<div class="[ visible-xs ][ margin-bottom ]"></div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ aling--left-btn-primary ]">
-							<a type="submit" href="tutoriales.html" class="[ btn btn-secondary ][ no-border ]"><strong>Tutoriales</strong></a>
-						</div>
-					</div>
-				</section>
+	<body class="[ bg-primary ][ color-light ]">
+		<header class="[ container ]">
+			<a href="index.html">
+				<img class="[ logo ]" src="img/logo.jpg">
+			</a>
+			<span class="[ hidden-xs ][ pull-right ]">
+				<a href="#"><img src="img/play1.png"></a>
+				<a href="#"><img src="img/instagram1.png"></a>
+				<a href="#"><img src="img/twitter1.png"></a>
+				<a href="#"><img src="img/facebook1.png"></a>
+			</span>
+			<div class="[ return ]">
+				<a href="comparte.html">
+					<img  src="img/atras.png">
+					<p class="[ fz-xsmall ]">atràs</p>
+				</a>
 			</div>
-		</div>
+		</header>
+		<section class="[ container ][ text-center ][ box-center box-center--2 ]">
+
+			<camera id='DemoCamera' data-app-id='63f9c870-72c4-0130-04c5-123139045d73'></camera>
+
+			<img class="[ img-responsive img-title ]" src="img/title-1.png">
+			<div class="[ row ]">
+				<div class="[ col-sm-4 ][ margin-bottom--large ]">
+					<div class="[ ico-small ][ margin-auto margin-bottom ][ relative ]">
+						<img class="[ img-responsive ][ absolute bottom-0 ]" src="img/camara.png">
+					</div>
+					<p class="[ text-uppercase ][ no-margin ]"><strong>Primero</strong></p>
+					<p>Enciende tu cámara web y no te pongas nerviosa</p>
+				</div>
+				<div class="[ col-sm-4 ][ margin-bottom--large ]">
+					<div class="[ ico-small ][ margin-auto margin-bottom ][ relative ]">
+						<img class="[ img-responsive ][ absolute bottom-0 ]" src="img/maquillaje.png">
+					</div>
+					<p class="[ text-uppercase ][ no-margin ]"><strong>Después</strong></p>
+					<p>Platicanos tu tip, los pasos que debemos seguir y las recomendaciones</p>
+				</div>
+				<div class="[ col-sm-4 ][ margin-bottom--large ]">
+					<div class="[ ico-small ][ margin-auto margin-bottom ][ relative ]">
+						<img class="[ img-responsive ][ absolute bottom-0 ]" src="img/cargar.png">
+					</div>
+					<p class="[ text-uppercase ][ no-margin ]"><strong>Al final</strong></p>
+					<p class="[ no-margin ]">Sube tu video.</p>
+					<p>!Ya estás contagiando tu belleza!</p>
+				</div>
+			</div>
+			<a type="submit" href="pasos1.html" class="[ btn btn-primary ][ margin-bottom--large ]">Empezar a grabar</a>
+		</section>
 	</body>
 </html>

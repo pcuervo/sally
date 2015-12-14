@@ -6648,6 +6648,9 @@ button.close {
 .fixed {
   position: fixed;
 }
+.bottom-0 {
+  bottom: 0;
+}
 .block {
   display: block;
 }
@@ -6918,13 +6921,25 @@ button.close {
   position: absolute;
   top: 50%;
   width: 100%;
+}
+.box-center--1 {
   height: 168px;
   margin-top: -84px;
 }
 @media (max-width: 768px) {
-  .box-center {
+  .box-center--1 {
     height: 235px;
     margin-top: -117.5px;
+  }
+}
+.box-center--2 {
+  height: 318px;
+  margin-top: -98px;
+}
+@media (max-width: 768px) {
+  .box-center--2 {
+    height: 600px;
+    margin-top: -239px;
   }
 }
 @-ms-viewport {
@@ -7165,6 +7180,7 @@ header span img {
 }
 .ico-small {
   width: 35px;
+  height: 50px;
 }
 .return a {
   color: #f90e42;
