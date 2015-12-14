@@ -54,12 +54,12 @@
 			<a href="index.html">
 				<img class="[ logo ]" src="img/logo.jpg">
 			</a>
-			<span class="[ hidden-xs ][ pull-right ]">
+			<!-- <span class="[ hidden-xs ][ pull-right ]">
 				<a href="#"><img src="img/play1.png"></a>
 				<a href="#"><img src="img/instagram1.png"></a>
 				<a href="#"><img src="img/twitter1.png"></a>
 				<a href="#"><img src="img/facebook1.png"></a>
-			</span>
+			</span> -->
 			<div class="[ return ]">
 				<a href="comparte.html">
 					<img  src="img/atras.png">
@@ -72,8 +72,8 @@
 				<img class="[ img-responsive img-title ]" src="img/title-1.png">
 				<div class="[ row ]">
 					<div class="[ col-sm-4 col-sm-offset-4 ]">
-						<div class="[ ico-small ]">
-							<img src="img/maquillaje.png">
+						<div class="[ ico-small ][ margin-auto margin-bottom ]">
+							<img class="[ img-responsive ]" src="img/maquillaje.png">
 						</div>
 						<p class="[ text-uppercase ]"><strong>¡Listo!</strong></p>
 						<p>Casi acabamos, solo llena el siguiente formulario para ver el resultado</p>
@@ -81,37 +81,47 @@
 				</div>
 			</div>
 			<div class="[ form-tutorial ][ col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ][ color-light ][ margin-bottom--large ]">
-				<p class="[ text-uppercase ]">Nombre</p>
+				<form>
+				<label class="[ text-uppercase ]">Nombre</label>
 				<input class="[ form-control ][ margin-bottom ]">
-				<p class="[ text-uppercase ]">Título del tutorial</p>
+				<label class="[ text-uppercase ]">Título del tutorial</label>
 				<input class="[ form-control ][ margin-bottom ]">
-				<p class="[ text-uppercase ]">Resume tu tutorial en tres frases:</p>
-				<div class="[ form-group ]">
-					<div class="[ box-smaller ]">
-						<p>1</p>
+				<label class="[ text-uppercase ]">Resume tu tutorial en tres frases:</label>
+					<div class="[ form-inline ][ margin-bottom ]">
+						<div class="[ form-group ]">
+							<div class="[ input-group ]">
+								<div class="[ input-group-addon ][ color-primary ]">1</div>
+								<input type="text" class="[ form-control ]" id="exampleInputAmount">
+							</div>
+						</div>
 					</div>
-					<input class="[ form-control ][ margin-bottom ]" placeholder="Frase explicativa 1">
-				</div>
-				<div class="[ form-group ]">
-					<div class="[ box-smaller ]">
-						<p>2</p>
+					<div class="[ form-inline ] [ margin-bottom ]">
+						<div class="[ form-group ]">
+							<div class="[ input-group ]">
+								<div class="[ input-group-addon ][ color-primary ]">2</div>
+								<input type="text" class="[ form-control ]" id="exampleInputAmount">
+							</div>
+						</div>
 					</div>
-					<input class="[ form-control ][ margin-bottom ]" placeholder="Frase explicativa 1">
-				</div>
-				<div class="[ form-group ]">
-					<div class="[ box-smaller ]">
-						<p>3</p>
+					<div class="[ form-inline ][ margin-bottom ]">
+						<div class="[ form-group ]">
+							<div class="[ input-group ]">
+								<div class="[ input-group-addon ][ color-primary ]">3</div>
+								<input type="text" class="[ form-control ]" id="exampleInputAmount">
+							</div>
+						</div>
 					</div>
-					<input class="[ form-control ][ margin-bottom ]" placeholder="Frase explicativa 1">
-				</div>
-				<!-- <select class="[ form-control ]">
-					<option>Categoría</option>
-					<option>Categoría</option>
-					<option>Categoría</option>
-					<option>Categoría</option>
-					<option>Categoría</option>
-				</select> -->
+					<label class="[ text-uppercase ]">Categoría</label>
+					<select class="[ form-control ]">
+						<option>Ojos</option>
+						<option>Cabello</option>
+						<option>Uñas</option>
+						<option>Labios</option>
+					</select>
+				</form>
 			</div>
+
+
 			<div class="[ col-xs-12 ][ margin-bottom--xlarge ][ text-center ]">
 				<a type="submit" href="comparte.html" class="[ btn btn-primary ]">Continuar</a>
 			</div>
