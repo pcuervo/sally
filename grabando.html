@@ -49,75 +49,53 @@
 		<script src="https://use.typekit.net/lus4pyy.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
-	<body class="[ bg-primary ][ color-light ]">
+	<body>
 		<header class="[ container ]">
-			<a href="index.html">
-				<img class="[ logo ]" src="img/logo.jpg">
-			</a>
-			<span class="[ hidden-xs ][ pull-right ]">
-				<a href="#"><img src="img/play1.png"></a>
-				<a href="#"><img src="img/instagram1.png"></a>
-				<a href="#"><img src="img/twitter1.png"></a>
-				<a href="#"><img src="img/facebook1.png"></a>
-			</span>
-			<div class="[ return ]">
-				<a href="grabando2.html">
-					<img  src="img/atras.png">
-					<p class="[ fz-xsmall ]">atràs</p>
-				</a>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-3 ]">
+					<a href="index.html">
+						<img class="[ logo ]" src="img/logo1.png">
+					</a>
+					<div class="[ return ]">
+						<a href="comencemos.html">
+							<img  src="img/atras-2.png">
+							<p class="[ fz-xsmall ]">atràs</p>
+						</a>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-6 ][ margin-top--large ]" >
+					<img class="[ img-responsive img-title ]" src="img/title-2.png">
+				</div>
+				<span class="[ hidden-xs ][ pull-right ]">
+					<a href="#"><img src="img/play.png"></a>
+					<a href="#"><img src="img/instagram.png"></a>
+					<a href="#"><img src="img/twitter.png"></a>
+					<a href="#"><img src="img/facebook.png"></a>
+				</span>
 			</div>
 		</header>
-			<section class="[ container ][ text-center ]">
-				<img class="[ img-responsive img-title ]" src="img/title-1.png">
-				<div class="[ row ]">
 
-					<div class="[ col-xs-12 ][ margin-bottom ]">
-						<div style="text-align:center">
-							<!--
-							<button onclick="playPause()">Play/Pause</button>
-							<button onclick="makeBig()">Big</button>
-							<button onclick="makeSmall()">Small</button>
-							<button onclick="makeNormal()">Normal</button>
-							<br><br>-->
-							<video id="video1" width="100%" height="100%" controls>
-								<source src="movie.mp4" type="video/mp4">
-								<source src="movie.ogg" type="video/ogg">
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>
 
-					<div class="[ col-xs-12 ][ margin-bottom ]">
-						<a type="submit" href="#" class="[ btn btn-primary ]">Volver a grabar</a>
-						<a type="submit" href="#" class="[ btn btn-primary ]">Publicar</a>
-					</div>
-
-				</div>
-			</section>
-
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
 		<script>
-			var myVideo = document.getElementById("video1");
-
-			function playPause() {
-			    if (myVideo.paused)
-			        myVideo.play();
-			    else
-			        myVideo.pause();
-			}
-
-			function makeBig() {
-			    myVideo.width = 560;
-			}
-
-			function makeSmall() {
-			    myVideo.width = 320;
-			}
-
-			function makeNormal() {
-			    myVideo.width = 420;
-			}
-
-
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				imgToSvg();
+				/**
+				 * Triggered events
+				**/
+				//$('#send_btn').popover({content: 'Thank You'},'click');
+			});
 		</script>
+
 	</body>
+
+
+
 </html>
+
+
