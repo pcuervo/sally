@@ -647,10 +647,21 @@ input[type="checkbox"] {
 .input-search{
   border-radius: 25px;
   border:1px solid @primary;
+  border-right: none;
   padding: 10px;
   width: 300px;
-  @media (max-width: 330px){ width: 220px;}
-  @media (max-width: 250px){ width: 200px;}
+  //@media (max-width: 330px){ width: 220px;}
+  //@media (max-width: 250px){ width: 200px;}
+}
+
+.input-search--button{
+  background: none;
+  width: 60px;
+  padding: 16px;
+  border:1px solid @primary;
+  border-left: none;
+  border-radius: 0px 25px 25px 0;
+  .find 
 }
 
 .form-tutorial .input-group-addon{
