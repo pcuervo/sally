@@ -3073,18 +3073,24 @@ select[multiple].input-lg {
 .input-search {
   border-radius: 25px;
   border: 1px solid #f90e42;
+  border-right: none;
   padding: 10px;
   width: 300px;
 }
-@media (max-width: 330px) {
-  .input-search {
-    width: 220px;
-  }
-}
-@media (max-width: 250px) {
-  .input-search {
-    width: 200px;
-  }
+.input-search--button {
+  background: none;
+  width: 60px;
+  padding: 16px;
+  border: 1px solid #f90e42;
+  border-left: none;
+  border-radius: 0px 25px 25px 0;
+  background-image: url('img/find.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 40px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .form-tutorial .input-group-addon {
   border-radius: 0px;
@@ -6043,8 +6049,8 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .modal-header {
   padding: 15px;
@@ -6100,6 +6106,38 @@ button.close {
   .modal-lg {
     width: 900px;
   }
+}
+.modal-video-tutorial {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal-video-tutorial.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal-video-tutorial.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .tooltip {
   position: absolute;
@@ -7249,10 +7287,6 @@ header span img {
 .return img {
   width: 30px;
 }
-.box-img {
-  width: 100%;
-  padding-bottom: 30%;
-}
 .img-user {
   background-image: url('img/mujer.jpg');
   background-size: cover;
@@ -7265,10 +7299,8 @@ header span img {
   padding-bottom: 100%;
 }
 .bg-opacity-dark:hover,
-.bg-opacity-dark:focus,
-.bg-opacity-dark.focus {
+.bg-opacity-dark:focus {
   background: none;
-  border: solid 2px #f90e42;
 }
 header {
   padding-top: 48px;
