@@ -7270,7 +7270,7 @@ header span img {
 }
 .box-img {
   width: 100%;
-  height: intrinsinc;
+  padding-bottom: 30%;
 }
 .img-user {
   background-image: url('img/mujer.jpg');
@@ -7281,7 +7281,7 @@ header span img {
 .bg-opacity-dark {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 25vh;
+  padding-bottom: 100%;
 }
 .bg-opacity-dark:hover,
 .bg-opacity-dark:focus,
