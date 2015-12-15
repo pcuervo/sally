@@ -13,16 +13,27 @@
   .center-full();
 }
 
+.center-full--xs{
+  @media (min-width: @screen-xs){
+    .center-full
+  }
+}
+
 .center-full--desktop{
   @media (min-width: @screen-sm){
     .center-full
   }
 }
 
-.center-full--height {
-  .center-full--height();
+.margin--landscape{
+  @media only screen
+    and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .margin-top-bottom--large
 }
-
+}
 
 .pull-right {
   float: right !important;

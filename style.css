@@ -6632,6 +6632,17 @@ button.close {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+@media (min-width: 480px) {
+  .center-full--xs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
 @media (min-width: 768px) {
   .center-full--desktop {
     position: absolute;
@@ -6643,14 +6654,11 @@ button.close {
     transform: translate(-50%, -50%);
   }
 }
-.center-full--height {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translate(-5%, -50%);
-  -ms-transform: translate(-5%, -50%);
-  -o-transform: translate(-5%, -50%);
-  transform: translate(-5%, -50%);
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .margin--landscape {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 .pull-right {
   float: right !important;
