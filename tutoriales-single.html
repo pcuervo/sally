@@ -69,7 +69,7 @@
 			<div class="[ return ]">
 				<a href="ver-video.html">
 					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-primary ]"  src="icons/atras.svg">
-					<p class="[ fz-xsmall ]">atràs</p>
+					<p class="[ fz-xsmall ]">atrás</p>
 				</a>
 			</div>
 
@@ -151,6 +151,16 @@
 				 * Triggered events
 				**/
 			});
+		</script>
+		<script>
+			var myVideo = document.getElementById("videoTutorial");
+
+			function playPause() {
+			    if (myVideo.paused)
+			        myVideo.play();
+			    else
+			        myVideo.pause();
+			}
 		</script>
 	</body>
 </html>
