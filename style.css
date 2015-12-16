@@ -1526,14 +1526,14 @@ body {
   font-family: 'futura-pt', sans-serif;
 }
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'futura-pt';
   font-weight: 100;
   font-style: normal;
 }
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 h1 {
@@ -3616,6 +3616,22 @@ input[type="button"].btn-block {
 }
 .btn--auto {
   width: auto;
+}
+.btn-play {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  button.btn-play img {
+    width: 40%;
+  }
 }
 .fade {
   opacity: 0;
@@ -6032,29 +6048,24 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-}
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
 .modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 .modal-content {
   position: relative;
@@ -6139,33 +6150,8 @@ button.close {
     width: 900px;
   }
 }
-.modal-video-tutorial {
-  display: none;
-  overflow: hidden;
-  position: fixed;
+.modal-video--tutorial {
   top: 25%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-.modal-video-tutorial.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal-video-tutorial.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -6844,6 +6830,18 @@ button.close {
 .bg-gray--dark {
   background-color: #cccccc;
 }
+.width-10 {
+  width: 10%;
+}
+.width-100 {
+  width: 100%;
+}
+.height-10 {
+  height: 10%;
+}
+.height-100 {
+  height: 100%;
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -7092,6 +7090,10 @@ button.close {
   height: 30px;
   text-align: center;
   font-weight: bold;
+}
+.box-hover {
+  border: solid 2px #f90e42;
+  width: 200%;
 }
 .alignleft {
   float: left;
@@ -7365,9 +7367,23 @@ header span img:not(.nav img) {
   width: 100%;
   padding-bottom: 100%;
 }
-.bg-opacity-dark:hover,
-.bg-opacity-dark:focus {
-  background: none;
+.hover-hide {
+  opacity: 1;
+}
+.hover-hide:hover,
+.hover-hide:focus,
+.hover-hide.focus {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.hover-show:hover,
+.hover-show:focus,
+.hover-show.focus {
+  opacity: 1;
+  display: block !important;
 }
 .icon-modal--nav {
   float: right;
