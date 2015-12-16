@@ -51,28 +51,45 @@
 	</head>
 	<body>
 		<header class="[ container ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<a href="index.html">
-						<img class="[ logo ]" src="img/logo1.png">
-					</a>
-					<div class="[ return ]">
-						<a href="index.html">
-							<img  src="img/atras-2.png">
-							<p class="[ fz-xsmall ]">atràs</p>
-						</a>
+			<a href="index.html">
+				<img class="[ logo ]" src="img/logo1.png">
+			</a>
+			<span class="[ visible-xs ][ pull-right ]">
+				<a type="button" data-toggle="modal" data-target="#modal-nav">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-primary ]" src="icons/navigation.svg">
+				</a>
+			</span>
+			<span class="[ hidden-xs ][ pull-right ]">
+				<a href="#"><img class="[ svg icon--iconed icon--thickness-3 icon--fill ][ color-primary ]" src="icons/youtube.svg"></a>
+				<a href="#"><img class="[ svg icon--iconed icon--thickness-3 icon--fill ][ color-primary ]" src="icons/instagram.svg"></a>
+				<a href="#"><img class="[ svg icon--iconed icon--thickness-3 icon--fill ][ color-primary ]" src="icons/twitter.svg"></a>
+				<a href="#"><img class="[ svg icon--iconed icon--thickness-3 icon--fill ][ color-primary ]" src="icons/facebook.svg"></a>
+			</span>
+			<div class="[ return ]">
+				<a href="index.html">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-primary ]"  src="icons/atras.svg">
+					<p class="[ fz-xsmall ]">atràs</p>
+				</a>
+			</div>
+
+			<!-- Modal Menú-->
+			<div id="modal-nav" class="[ modal fade ]" role="dialog">
+				<button type="button" class="[ close close--nav ]" data-dismiss="modal">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-primary ]" src="icons/navigation.svg">
+				</button>
+				<div class="[ modal-dialog modal-dialog--nav ]">
+				<!-- Modal content-->
+					<div class="[ modal-content modal-content--nav ]">
+						<div class="[ modal-body ]">
+							<a href="#"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/youtube.svg"></a>
+							<a href="#"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/instagram.svg"></a>
+							<a href="#"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/twitter.svg"></a>
+							<a href="#"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/facebook.svg"></a>
+						</div>
 					</div>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 ][ margin-top ]" >
-					<img class="[ img-responsive img-title ]" src="img/title-2.png">
-				</div>
-				<span class="[ hidden-xs ][ pull-right ]">
-					<a href="#"><img src="img/play.png"></a>
-					<a href="#"><img src="img/instagram.png"></a>
-					<a href="#"><img src="img/twitter.png"></a>
-					<a href="#"><img src="img/facebook.png"></a>
-				</span>
 			</div>
+
 		</header>
 
 		<div class="[ container ]">
@@ -86,7 +103,7 @@
 				<div class="[ col-xs-1 col-sm-4 ]"></div>
 			</div>
 
-			<!-- buscar 
+			<!-- buscar
 			<div class="[ text-center ][ margin-bottom--large ]" role="search">
 				<div class="[ form-group ]">
 					<input type="text" class="[ input-search ][ find ][ large ]" placeholder="Busco consejos de...">
@@ -108,7 +125,7 @@
 				<div class="[ col-xs-1 col-sm-4 ]"></div>
 			</div>
 
-			
+
 
 			<!--/filtros / paginacion-->
 			<div class="[ row ]">
@@ -166,7 +183,7 @@
 								<div class="[ box-hover ]">
 									<p class="[ text-uppercase ]"><strong>Diana Rodríguez</strong></p>
 									<p class="[ color-light ]">Cómo ocultar las ojeras</p>
-								</div>	
+								</div>
 							</div>
 						</div>
 
@@ -294,7 +311,7 @@
 
 		<!-- modal-tutorial -->
 		<div id="tutoriales3" class="[ modal fade ]" tabindex="-1" role="dialog">
-			
+
 				<div class="[ modal-dialog ]">
 
 					<div class="[ relative ]">
@@ -317,7 +334,7 @@
 						<button class="[ btn-play ]" onclick="playPause()"><img src="img/play-btn.png">
 						</button>
 					</div>
-					
+
 					<div class="relative">
 						<div class="[ text-center ]">
 							<div class="[ margin ]">
@@ -328,10 +345,10 @@
 								<a href="#"><img src="img/facebook1.png"></a>
 							</div>
 						</div>
-					</div>		
-					
+					</div>
+
 			</div><!-- /-dialog -->
-			
+
 		</div><!-- / modal-tutorial -->
 
 
