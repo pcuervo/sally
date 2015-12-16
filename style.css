@@ -7087,6 +7087,10 @@ button.close {
   text-align: center;
   font-weight: bold;
 }
+.box-hover {
+  border: solid 2px #f90e42;
+  width: 200%;
+}
 .alignleft {
   float: left;
 }
@@ -7359,10 +7363,23 @@ header span img:not(.nav img) {
   width: 100%;
   padding-bottom: 100%;
 }
-.bg-opacity-dark:hover,
-.bg-opacity-dark:focus,
-.bg-opacity-dark.focus {
-  background: none;
+.hover-hide {
+  opacity: 1;
+}
+.hover-hide:hover,
+.hover-hide:focus,
+.hover-hide.focus {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.hover-show:hover,
+.hover-show:focus,
+.hover-show.focus {
+  opacity: 1;
+  display: block !important;
 }
 icon {
   display: inline-block;

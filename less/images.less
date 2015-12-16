@@ -65,11 +65,24 @@ header span img:not(.nav img){
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding-bottom:100%;
+}
+
+.hover-hide{
+	opacity: 1;
 	&:hover,
 	&:focus,
-	&.focus
-	{
-	background: none;
-	//border: solid 2px @primary 
+	&.focus{
+		opacity: 0;
+		.transition	
 	}
+}
+
+.hover-show{
+
+  	&:hover,
+	&:focus,
+	&.focus{
+    	opacity: 1;
+    	.show;
+  }
 }
