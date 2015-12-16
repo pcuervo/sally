@@ -95,16 +95,22 @@
 			<img class="[ img-responsive img-title ]" src="img/title-1.png">
 			<div class="[ js-video-container ]"></div>
 			<div class="[ text-center ][ margin-top ][ padding-movil ]">
-				<div class="[ js-continuar ]" >
-					<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
-					<div class="[ visible-xs ][ margin-bottom ]"></div>
+				<div class="[ inline-block align-middle ]">
+					<div class="[ js-continuar ]" >
+						<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
+						<div class="[ visible-xs ][ margin-bottom ]"></div>
+					</div>
 				</div>
-				<div class="[ js-volver ]">
-					<a data-toggle="modal" data-target="#ver-video" class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
-					<div class="[ visible-xs ][ margin-bottom ]"></div>
+				<div class="[ inline-block align-middle ]">
+					<div class="[ js-volver ]">
+						<a data-toggle="modal" data-target="#ver-video" class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
+						<div class="[ visible-xs ][ margin-bottom ]"></div>
+					</div>
 				</div>
-				<div class="[ js-video-opener ]">
-					<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
+				<div class="[ inline-block align-middle ]">
+					<div class="[ js-video-opener ]">
+						<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -131,8 +137,8 @@
 
 				$('body').on('click', '.js-video-closer', function(){
 					emptyVideo();
-					$('js-continuar').removeClass('visible');
-					$('js-volver').removeClass('visible');
+					$('js-continuar').removeClass('hidden');
+					$('js-volver').removeClass('hidden');
 				});
 
 			});
