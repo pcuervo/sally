@@ -6031,6 +6031,8 @@ button.close {
 }
 .close--nav {
   opacity: 1;
+  margin-top: 24px;
+  margin-right: 15px;
 }
 .modal-open {
   overflow: hidden;
@@ -6159,12 +6161,12 @@ button.close {
 }
 .modal-dialog--nav {
   position: relative;
-  margin-top: 80px!important;
+  margin-top: 100px!important;
   margin-right: 0px;
   float: right;
-  left: 150px;
+  left: 170px;
   text-align: right;
-  width: 220px;
+  width: 260px;
   background-color: #f90e42;
   border-radius: 15px 0 0 15px;
 }
@@ -7363,11 +7365,6 @@ header span img:not(.nav img) {
   width: 100%;
   padding-bottom: 100%;
 }
-.icon-modal--nav {
-  float: right;
-  padding-top: 24px;
-  padding-right: 15px;
-}
 .hover-hide {
   opacity: 1;
 }
@@ -7408,8 +7405,8 @@ icon {
   height: 20px;
 }
 .icon--iconed--large {
-  width: 40px !important;
-  height: 40px;
+  width: 35px !important;
+  height: 35px;
 }
 /*------------------------------------*\
   #COLOR
