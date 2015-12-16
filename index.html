@@ -63,27 +63,60 @@
 						<a href="#"><img src="img/twitter.png"></a>
 						<a href="#"><img src="img/facebook.png"></a>
 					</span>
-					<!-- <span class="[ visible-xs ][ pull-right ]">
-							<img src="icons/navigation.svg" class="[ svg ][ icon icon--min icon--stroke ][ color-secondary ]" alt="">
-					</span> -->
+					<span class="[ visible-xs ][ pull-right ]">
+						<a type="button" data-toggle="modal" data-target="#modal-nav">
+							<img src="img/nav.png">
+						</a>
+					</span>
+
+					<!-- Modal Menú-->
+					<div id="modal-nav" class="[ modal fade ]" role="dialog">
+						<div class="[ modal-dialog modal-dialog--nav ]">
+						<!-- Modal content-->
+							<div class="[ modal-content modal-content--nav ]">
+								<div class="[ modal-body ]">
+									<a href="#"><img class="[ margin-sides--small ]" src="img/play1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/instagram1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/twitter1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/facebook1.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</header>
-				<section class="[ container ][ text-center ]">
-					<div class="[ center-full ]">
-						<img class="[ img-responsive img-title ][ margin-bottom--xlarge ]" src="img/title-2.png">
-						<div class="[ padding-movil ]">
-							<div class="[ margin-bottom ]">
-								<p class="[ fz-large ][ no-margin ]"><strong>¿Te gustaría contagiar al mundo con tu belleza?</strong></p>
-								<p class="">Graba tu tutorial siguiendo las instrucciones y comparte los mejores tips.</p>
-							</div>
-							<div>
-								<a href="pasos-explicativos.html" class="[ btn btn-secondary btn-movil ][ margin-left margin-right  no-border ]"><strong>Graba tutorial</strong></a>
-								<div class="[ margin-bottom ][ visible-xs ]"></div>
-								<a href="tutoriales.html" class="[ btn btn-secondary btn-movil ][ margin-left margin-right no-border ]"><strong>Tutoriales</strong></a>
-							</div>
+				<section class="[ container ][ text-center ][ center-full margin--landscape ]">
+					<img class="[ img-responsive img-title ][ margin-bottom--xlarge ]" src="img/title-2.png">
+					<div class="[ padding-movil ]">
+						<div class="[ margin-bottom ]">
+							<p class="[ fz-large ][ no-margin ]"><strong>¿Te gustaría contagiar al mundo con tu belleza?</strong></p>
+							<p class="">Graba tu tutorial siguiendo las instrucciones y comparte los mejores tips.</p>
+						</div>
+						<div>
+							<a href="pasos-explicativos.html" class="[ btn btn-secondary btn-movil no-border ][ margin-sides   ]"><strong>Graba tutorial</strong></a>
+							<div class="[ margin-bottom ][ visible-xs ]"></div>
+							<a href="tutoriales.html" class="[ btn btn-secondary btn-movil no-border ][ margin-sides ]"><strong>Tutoriales</strong></a>
 						</div>
 					</div>
 				</section>
 			</div>
 		</div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/functions.js"></script>
+		<script>
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				imgToSvg();
+
+				/**
+				 * Triggered events
+				**/
+			});
+		</script>
 	</body>
 </html>
