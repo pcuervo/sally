@@ -6834,6 +6834,9 @@ button.close {
 .width-10 {
   width: 10%;
 }
+.width-50 {
+  width: 50%;
+}
 .width-100 {
   width: 100%;
 }
