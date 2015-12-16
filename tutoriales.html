@@ -433,15 +433,22 @@
 
 				<div class="[ modal-dialog ]">
 
-					<div class="[ relative ]">
+					<div class="[ relative ][ container-fluid ]">
 						<!-- titulo usuario / close -->
-						<div class="[ absolute ][ text-uppercase color-light ][ width-100 padding ]" >
-							<button type="button" class="[ close ][ pull-right ]" data-dismiss="modal">
-								<img class="[ inline-block ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/close.svg">
-							</button>
-							<p><strong>Titulo</strong></p>
-							<p>Usuario</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-8 ]">
+								<div class="[ text-uppercase color-light ][ width-100 padding ][ absolute ]" >
+									<p><strong>Titulo</strong></p>
+									<p>Usuario</p>
+								</div>
+							</div>
+							<div class="[ col-xs-4 ]">
+								<button type="button" class="[ close ][ pull-right ]" data-dismiss="modal">
+									<img class="[ inline-block ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/close.svg">
+								</button>
+							</div>
 						</div>
+							
 						<!-- video -->
 						<video id="videoTutorial" width="100%" height="100%" >
 							<source src="movie.mp4" type="video/mp4">
