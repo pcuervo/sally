@@ -110,6 +110,7 @@
 
 .color-primary{ color: @primary;}
 .color-light{ color: @light;}
+.color-black{ color: @gray-base;}
 
 // Background-Color
 // -------------------------
@@ -257,4 +258,48 @@
 }
 .alignright {
   float: right;
+}
+
+
+ .paddin-bottom--100{
+  width: 100%;
+  padding-bottom:100%;}
+
+.box-change--2{
+  padding: 5px;
+  height: 100px;
+}
+.box-change .box-change--1 {              /*Contiene el primer texto visible*/
+  color:black;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+.box-change a {              /*Contiene el texto del cambio */
+  text-decoration: none;
+}
+.box-change a .box-change--2 {
+  display:none;           /*Oculta el elemento sin eliminarlo*/
+}
+.box-change a:hover .box-change--2 {         /*Muestra el texto de cambio*/
+  display:block;
+  background-color:transparent;   /*Evita que se vea algun color de fondo en el caso de tenerlo*/
+}
+.box-change  a:hover .box-change--1 {
+  display:none;           /*Oculta el elemento sin eliminarlo*/
+}
+
+.box-border{
+  border: 1px solid @primary;
+  width: 100%;
+  position: relative;
+}
+
+.box-bg-color{
+  background-color: @primary;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+
 }
