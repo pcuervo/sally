@@ -154,7 +154,7 @@
 					<ul class="[ pagination large ][ color-primary ]">
 						<li>
 							<a href="#" aria-label="Previous">
-								<span aria-hidden="true"><img class="[ ico-small ][ svg icon--stroke  ][ color-primary ]" src="icons/back.svg"></span>
+								<span aria-hidden="true"><img class="[ ico-small ][ svg icon--stroke icon--thickness-1 ][ color-primary ]" src="icons/back.svg"></span>
 							</a>
 						</li>
 						<li><a href="#">1</a></li>
@@ -199,12 +199,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="[ col-xs-6 col-sm-3 col-md-2 ][ no-padding ]">
-					<div class="[ img-user ]">
-						<div class="[ bg-opacity-dark ][ relative ]">
+				<div class="[ col-xs-6 col-sm-3 col-md-2 ][ no-padding ][ grid-item ]">
+					<div class="[ padding--square ][ bg-image ][ relative ][ grid-item__image ]" style="background-image: url('img/mujer.jpg');">
+						<div class="[ bg-opacity-dark ][ grid-item__info_compressed ]">
 							<div class="[ center-full ]">
-								<p class="[ text-uppercase color-primary ]"><strong>Regina Mañueco</strong></p>
-								<p class="[ color-light ]">Rizos de ensueño</p>
+								<p class="[ text-uppercase color-primary ]"><strong>Karla Gonzalez</strong></p>
+								<p class="[ color-light ]">Labios perfectos</p>
+							</div>
+						</div>
+						<div class="[ grid-item__info ]" data-toggle="modal" data-target="#tutoriales3">
+							<div class="[ relative ][ height-100 ]">
+								<div class="[ grid-item__info__bg ]">
+									<p class="[ text-uppercase color-black ]"><strong>Diana Rodriguez Lopez Peres del santo</strong></p>
+									<p class="[ color-light ]">Cómo ocultar las ojeras largas largas largas</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -320,9 +328,9 @@
 					<div class="[ relative ]">
 						<!-- titulo usuario / close -->
 						<div class="[ absolute ][ text-uppercase color-light ][ width-100 padding ]" >
-							<span type="button" class="[ closer ][ pull-right ]" data-dismiss="modal">
+							<button type="button" class="[ close ][ pull-right ]" data-dismiss="modal">
 								<img class="[ inline-block ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/close.svg">
-							</span>
+							</button>
 							<p><strong>Titulo</strong></p>
 							<p>Usuario</p>
 						</div>

@@ -93,10 +93,11 @@
 		</header>
 		<section class="[ container ][ center-full margin--landscape ]">
 			<img class="[ img-responsive img-title ]" src="img/title-1.png">
+			<div class="[ js-video-container ]"></div>
 			<div class="[ text-center ][ margin-top ][ padding-movil ]">
 				<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
 				<div class="[ visible-xs ][ margin-bottom ]"></div>
-				<a data-toggle="modal" data-target="#ver-video" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Ver video</a>
+				<a data-toggle="modal" data-target="#ver-video" class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
 				<div class="[ visible-xs ][ margin-bottom ]"></div>
 				<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
 			</div>
@@ -149,6 +150,18 @@
 				/**
 				 * Triggered events
 				**/
+				$('.js-video-opener').on('click', function(){
+					loadVideo();
+					$('js-continuar').addClass('hidden');
+					$('js-volder').addClass('hidden');
+				});
+
+				$('body').on('click', '.js-video-closer', function(){
+					emptyVideo();
+					$('js-continuar').removeClass('hidden');
+					$('js-volder').removeClass('hidden');
+				});
+
 			});
 		</script>
 	</body>

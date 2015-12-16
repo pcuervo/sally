@@ -33,3 +33,11 @@ function imgToSvg(){
 /*------------------------------------*\
     #TOGGLE FUNCTIONS
 \*------------------------------------*/
+
+function loadVideo(){
+    $('.js-video-container').load( "ajax/video.html .js-video-element" );
+}
+
+function emptyVideo(){
+    $('.js-video-container').empty();
+}
