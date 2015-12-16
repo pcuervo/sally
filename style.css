@@ -7341,6 +7341,9 @@ header span img:not(.nav img) {
     background-position: 30% 70%;
   }
 }
+.bg-opacity {
+  opacity: 0.5;
+}
 .bg-opacity-dark {
   background-color: rgba(0, 0, 0, 0.7);
 }
