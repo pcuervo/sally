@@ -6013,6 +6013,9 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+.close--nav {
+  opacity: 1;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6170,9 +6173,10 @@ button.close {
 }
 .modal-dialog--nav {
   position: relative;
-  margin-top: 80px!important;
+  margin-top: 60px!important;
   margin-right: 0px;
   float: right;
+  right: -36px;
   text-align: right;
   width: 220px;
   background-color: #f90e42;
@@ -6792,8 +6796,8 @@ button.close {
 .left-20 {
   left: 20px;
 }
-.z-index1 {
-  z-index: 1;
+.z-index--1 {
+  z-index: 2000;
 }
 .block {
   display: block;
@@ -7364,6 +7368,11 @@ header span img:not(.nav img) {
 .bg-opacity-dark:hover,
 .bg-opacity-dark:focus {
   background: none;
+}
+.icon-modal--nav {
+  float: right;
+  padding-top: 24px;
+  padding-right: 15px;
 }
 icon {
   display: inline-block;
