@@ -63,9 +63,27 @@
 						<a href="#"><img src="img/twitter.png"></a>
 						<a href="#"><img src="img/facebook.png"></a>
 					</span>
-					<!-- <span class="[ visible-xs ][ pull-right ]">
-							<img src="icons/navigation.svg" class="[ svg ][ icon icon--min icon--stroke ][ color-secondary ]" alt="">
-					</span> -->
+					<span class="[ visible-xs ][ pull-right ]">
+						<a type="button" data-toggle="modal" data-target="#modal-nav">
+							<img src="img/nav.png">
+						</a>
+					</span>
+
+					<!-- Modal Menú-->
+					<div id="modal-nav" class="[ modal fade ]" role="dialog">
+						<div class="[ modal-dialog modal-dialog--nav ]">
+						<!-- Modal content-->
+							<div class="[ modal-content modal-content--nav ]">
+								<div class="[ modal-body ]">
+									<a href="#"><img class="[ margin-sides--small ]" src="img/play1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/instagram1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/twitter1.png"></a>
+									<a href="#"><img class="[ margin-sides--small ]" src="img/facebook1.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</header>
 				<section class="[ container ][ text-center ][ center-full margin--landscape ]">
 					<img class="[ img-responsive img-title ][ margin-bottom--xlarge ]" src="img/title-2.png">
@@ -83,5 +101,22 @@
 				</section>
 			</div>
 		</div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/functions.js"></script>
+		<script>
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				imgToSvg();
+
+				/**
+				 * Triggered events
+				**/
+			});
+		</script>
 	</body>
 </html>

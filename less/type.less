@@ -318,7 +318,7 @@ p{
   font-size: 16px;
   @media (min-width: @screen-sm){ font-size: 18px;}
   font-family: 'futura-pt';
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -350,9 +350,11 @@ a:hover{
   font-size: 14px;
   @media (min-width: @screen-sm){ font-size: 16px;}
 }
-.fz-xxsmall{
-  font-size: 12px;
+.fz-small{ font-size: 12px;
+  @media (min-width: @screen-sm){ font-size: 14px;}
 }
+
+.fz-xxsmall{ font-size: 10px; }
 
 // -------------------------
 .line-height{ line-height: 10px;}

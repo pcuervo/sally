@@ -192,12 +192,14 @@ input[type="button"] {
   font-family: 'futura-pt';
   font-weight: 300;
   font-style: normal;
+  &:active:hover,
   &:hover,
   &:focus,
   &:active,
   {
     background-color: @primary-dark;
     border:1px solid @light;
+    color: @light;
   }
 }
 
@@ -205,11 +207,3 @@ input[type="button"] {
 
 .btn--large{ width: 200px;}
 .btn--auto{ width: auto; }
-
-
-// .btn-movil{
-//   @media (max-width: 400px){
-//     font-size: 10px;
-//     width: 130px;
-//   }
-// }
