@@ -110,6 +110,7 @@
 
 .color-primary{ color: @primary;}
 .color-light{ color: @light;}
+.color-black{ color: @gray-base;}
 
 // Background-Color
 // -------------------------
@@ -178,6 +179,11 @@
 .padding--left--large{ padding-left: (@padding-base-vertical*4); }
 .padding--left--xlarge{ padding-left: (@padding-base-vertical*6); }
 .padding--left--xxlarge{ padding-left: (@padding-base-vertical*8); }
+
+.padding--square{
+  width: 100%;
+  padding-bottom: 100%;
+}
 
 // Border
 // -------------------------
@@ -251,11 +257,4 @@
 
 .box-hover{
   border: solid 2px @primary;
-}
-
-.alignleft {
-  float: left;
-}
-.alignright {
-  float: right;
 }

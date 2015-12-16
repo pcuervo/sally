@@ -1,0 +1,60 @@
+//
+// Tutorials
+// --------------------------------------------------
+
+
+// Grid
+.grid-item{
+  overflow: hidden;
+}
+
+.grid-item:hover .grid-item__info_compressed{
+  top: 180%;
+}
+
+.grid-item:hover .grid-item__info{
+  top: 10px;
+}
+
+.grid-item__image{}
+
+.grid-item__info_compressed{
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  .transition(all 0.4s ease-out);
+}
+
+.grid-item__info{
+  border: 1px solid @primary;
+  position: absolute; top: 180%; right: 10px; bottom: 10px; left: 10px;
+  .transition(all 0.4s ease);
+}
+
+.grid-item__info__bg{
+  width: 100%;
+  padding: 5px;
+  background-color: @primary;
+  position: absolute; bottom: 0; left: 0;
+
+}
+
+.box-change--2{
+  padding: 5px;
+}
+.box-change .box-change--1 {              /*Contiene el primer texto visible*/
+  color:black;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.box-change a {              /*Contiene el texto del cambio */
+  text-decoration: none;
+}
+.box-change a .box-change--2 {
+  display:none;           /*Oculta el elemento sin eliminarlo*/
+}
+.box-change a:hover .box-change--2 {         /*Muestra el texto de cambio*/
+  display:block;
+  background-color:transparent;   /*Evita que se vea algun color de fondo en el caso de tenerlo*/
+}
+.box-change  a:hover .box-change--1 {
+  display:none;           /*Oculta el elemento sin eliminarlo*/
+}
