@@ -3091,18 +3091,11 @@ select[multiple].input-lg {
 }
 .input-search--button {
   background: none;
-  width: 60px;
-  padding: 16px;
+  width: 33px;
+  padding: 7px;
   border: 1px solid #f90e42;
   border-left: none;
   border-radius: 0px 25px 25px 0;
-  background-image: url('img/find.png');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 40px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
 }
 .form-tutorial .input-group-addon {
   border-radius: 0px;
