@@ -6159,10 +6159,10 @@ button.close {
 }
 .modal-dialog--nav {
   position: relative;
-  margin-top: 60px!important;
+  margin-top: 80px!important;
   margin-right: 0px;
   float: right;
-  right: -36px;
+  left: 150px;
   text-align: right;
   width: 220px;
   background-color: #f90e42;
@@ -6781,9 +6781,6 @@ button.close {
 }
 .left-20 {
   left: 20px;
-}
-.z-index--1 {
-  z-index: 2000;
 }
 .block {
   display: block;
@@ -7405,31 +7402,13 @@ icon {
   width: 100%;
   height: auto;
 }
-.icon--min {
-  width: 40px;
-  height: 40px;
-}
 .icon--iconed {
-  width: 16px !important;
-  height: 16px;
-}
-.icon--iconed--mini {
-  width: 10px !important;
-  height: 10px;
-}
-.icon--iconed--large {
   width: 20px !important;
   height: 20px;
 }
-.icon--iconed--xlarge {
-  width: 25px !important;
-  height: 25px;
-  margin-top: 5px;
-  margin-right: 7px;
-}
-.icon--feature {
-  width: 6em !important;
-  height: 6em;
+.icon--iconed--large {
+  width: 40px !important;
+  height: 40px;
 }
 /*------------------------------------*\
   #COLOR
