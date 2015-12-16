@@ -36,25 +36,3 @@
   position: absolute; bottom: 0; left: 0;
 
 }
-
-.box-change--2{
-  padding: 5px;
-}
-.box-change .box-change--1 {              /*Contiene el primer texto visible*/
-  color:black;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.box-change a {              /*Contiene el texto del cambio */
-  text-decoration: none;
-}
-.box-change a .box-change--2 {
-  display:none;           /*Oculta el elemento sin eliminarlo*/
-}
-.box-change a:hover .box-change--2 {         /*Muestra el texto de cambio*/
-  display:block;
-  background-color:transparent;   /*Evita que se vea algun color de fondo en el caso de tenerlo*/
-}
-.box-change  a:hover .box-change--1 {
-  display:none;           /*Oculta el elemento sin eliminarlo*/
-}

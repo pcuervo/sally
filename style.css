@@ -6004,6 +6004,7 @@ button.list-group-item-danger.active:focus {
   line-height: 1;
   color: #fff;
   text-shadow: 0 1px 0 #fff;
+  z-index: 100;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -6783,6 +6784,12 @@ button.close {
 .left-50 {
   left: 50%;
 }
+.z-index---1 {
+  z-index: -1;
+}
+.z-index--1 {
+  z-index: 1;
+}
 .block {
   display: block;
 }
@@ -7338,6 +7345,9 @@ header span img:not(.nav img) {
     background-position: 30% 70%;
   }
 }
+.bg-opacity-light {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 .bg-opacity-dark {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -7403,6 +7413,10 @@ icon {
 .icon--iconed--large {
   width: 35px !important;
   height: 35px;
+}
+.icon--iconed--xxlarge {
+  width: 50px !important;
+  height: 50px;
 }
 /*------------------------------------*\
   #COLOR
@@ -7493,32 +7507,5 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-.box-change--2 {
-  padding: 5px;
-}
-.box-change .box-change--1 {
-  /*Contiene el primer texto visible*/
-  color: black;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.box-change a {
-  /*Contiene el texto del cambio */
-  text-decoration: none;
-}
-.box-change a .box-change--2 {
-  display: none;
-  /*Oculta el elemento sin eliminarlo*/
-}
-.box-change a:hover .box-change--2 {
-  /*Muestra el texto de cambio*/
-  display: block;
-  background-color: transparent;
-  /*Evita que se vea algun color de fondo en el caso de tenerlo*/
-}
-.box-change a:hover .box-change--1 {
-  display: none;
-  /*Oculta el elemento sin eliminarlo*/
 }
 /*# sourceMappingURL=bootstrap.css.map */
