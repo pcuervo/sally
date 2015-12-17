@@ -41,3 +41,4 @@ function loadVideo(){
 function emptyVideo(){
     $('.js-video-container').empty();
 }
+
