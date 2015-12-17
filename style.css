@@ -3623,7 +3623,7 @@ input[type="button"].btn-block {
 }
 @media (max-width: 768px) {
   button.btn-play img {
-    width: 40%;
+    width: 50%;
   }
 }
 .fade {
