@@ -102,13 +102,13 @@
 					</div>
 				</div>
 				<div class="[ inline-block align-middle ]">
-					<div class="[ js-volver ]">
-						<a data-toggle="modal" data-target="#ver-video" class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
+					<div class="[ js-video-opener ]">
+						<a class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
 						<div class="[ visible-xs ][ margin-bottom ]"></div>
 					</div>
 				</div>
-				<div class="[ inline-block align-middle ]">
-					<div class="[ js-video-opener ]">
+				<div class="[ js-volver ][ inline-block align-middle ]">
+					<div class="">
 						<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
 					</div>
 				</div>
@@ -131,14 +131,15 @@
 				**/
 				$('.js-video-opener').on('click', function(){
 					loadVideo();
-					$('js-continuar').addClass('hidden');
-					$('js-volver').addClass('hidden');
+					// $('.js-continuar').addClass('hidden');
+					$('.js-video-opener').addClass('hidden');
+					$('.js-volver').addClass('hidden');
 				});
 
 				$('body').on('click', '.js-video-closer', function(){
 					emptyVideo();
-					$('js-continuar').removeClass('hidden');
-					$('js-volver').removeClass('hidden');
+					$('.js-video-opener').removeClass('hidden');
+					$('.js-volver').removeClass('hidden');
 				});
 
 			});
