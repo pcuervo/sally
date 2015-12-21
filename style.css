@@ -6901,6 +6901,10 @@ button.close {
 .padding--bottom--xxlarge {
   padding-bottom: 48px;
 }
+.no-padding--top-bottom {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .padding--top-bottom {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -6959,6 +6963,9 @@ button.close {
 }
 .padding--right--xxlarge {
   padding-right: 48px;
+}
+.no-padding--left {
+  padding-left: 0;
 }
 .padding--left {
   padding-left: 12px;
