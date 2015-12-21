@@ -7138,6 +7138,9 @@ button.close {
 .box-hover {
   border: solid 2px #f90e42;
 }
+.js-video-closer {
+  color: #fff;
+}
 @-ms-viewport {
   width: device-width;
 }
