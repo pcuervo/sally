@@ -1536,6 +1536,24 @@ p {
     font-size: 16px;
   }
 }
+.p--xs {
+  font-size: 10px;
+}
+@media (min-width: 480px) {
+  .p--xs {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .p--xs {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .p--xs {
+    font-size: 16px;
+  }
+}
 h1 {
   color: #f90e42;
 }
@@ -7038,6 +7056,10 @@ button.close {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.margin-top-bottom--xlarge {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 .margin-sides {
   margin-left: 20px;
   margin-right: 20px;
@@ -7430,6 +7452,16 @@ icon {
 .icon--iconed--xxlarge {
   width: 50px !important;
   height: 50px;
+}
+.icon--iconed--medium-xs {
+  width: 24px !important;
+  height: 24px;
+}
+@media (max-width: 480px) {
+  .icon--iconed--medium-xs {
+    width: 14px !important;
+    height: 14px;
+  }
 }
 /*------------------------------------*\
   #COLOR
