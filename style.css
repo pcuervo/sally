@@ -6985,6 +6985,11 @@ button.close {
 .no-padding--left {
   padding-left: 0;
 }
+@media (min-width: 768px) {
+  .no-padding--left--sm {
+    padding-left: 0!important;
+  }
+}
 .padding--left {
   padding-left: 12px;
 }
