@@ -3140,6 +3140,10 @@ select[multiple].input-lg {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .btn:focus,
 .btn:active:focus,
@@ -6015,6 +6019,33 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 3px;
 }
+/**
+ * start-screen
+**/
+/**
+ * camera-detection-screen
+**/
+/**
+ * countdown-screen
+**/
+/**
+ * recording-screen
+**/
+/**
+ * playback-screen
+**/
+/**
+ * accept-screen
+**/
+/**
+ * wait-screen
+**/
+/**
+ * completed-screen
+**/
+/**
+ * error-screen
+**/
 .close {
   float: right;
   font-size: 21px;
@@ -6846,6 +6877,9 @@ button.close {
 }
 .bg-light {
   background-color: #fff;
+}
+.bg-black {
+  background-color: #000;
 }
 .bg-gray--light {
   background-color: #eeeeee;
