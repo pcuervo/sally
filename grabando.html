@@ -140,14 +140,11 @@
 			</div>
 
 		</header>
-		<div class="video_background">
-
-
-			<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
-
-				<div id='myVideo-start-screen'>
-				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
-				</div>
+		<div class="[ bg-black ]">
+			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180'></camera>
+			<div id='myVideo-start-screen'>
+			  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
+			</div>
 		</div>
 
 
@@ -168,43 +165,19 @@
 				/**
 				 * Triggered events
 				**/
-				//$('#send_btn').popover({content: 'Thank You'},'click');
-			});
-		</script>
-		<script type="text/javascript">
 
 				CameraTag.observe('myVideo', 'initialized', function () {
 					document.getElementById('grabar').click();
-
 				});
 
 				CameraTag.observe('myVideo', 'published', function(){
-
 					var api_key = "Vw-bKoSv7bjYq-ekXhzL";
-
-				 	var uuid = document.getElementById("myVideo_video_uuid").value;
-
-				 	window.location.href = 'http://localhost:8888/sally/sally/exito.html';
+					var uuid = document.getElementById("myVideo_video_uuid").value;
+					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
 
-
-
-
+			});
 		</script>
-		<style type="text/css">
-
-			#myVideo{
-
-				    margin-left: 14%;
-	  				margin-right: auto;
-
-			}
-
-			.video_background{
-				background-color: black;
-			}
-
-		</style>
 	</body>
 </html>
 
