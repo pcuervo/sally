@@ -98,23 +98,98 @@
 			CT_i18n[41] = CT_i18n[41] || 'Oh No! It looks like your browser paused the recorder'
 		</script>
 	</head>
-	<body>
-		<header class="[ container ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<a href="index.html">
-						<img class="[ logo ]" src="img/logo1.png">
-					</a>
+	<body class="[ bg-primary ][ color-light ]">
+		<header class="[ container ][ margin-bottom ]">
+			<a href="index.html">
+				<img class="[ logo ]" src="img/logo.jpg">
+			</a>
+			<span class="[ visible-xs ][ pull-right ]">
+				<a type="button" data-toggle="modal" data-target="#modal-nav">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]" src="icons/navigation.svg">
+				</a>
+			</span>
+			<span class="[ hidden-xs ][ pull-right ]">
+				<a  href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/youtube.svg"></a>
+				<a href="https://www.instagram.com/sallybeautymx/"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/instagram.svg"></a>
+				<a href="https://twitter.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg"></a>
+				<a href="https://www.facebook.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg"></a>
+			</span>
+			<div class="[ return ]">
+				<a href="comencemos.html">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]"  src="icons/atras.svg">
+					<p class="[ fz-xsmall ]">atrás</p>
+				</a>
+			</div>
+
+			<!-- Modal Menú-->
+			<div id="modal-nav" class="[ modal fade ]" role="dialog">
+				<button type="button" class="[ close close--nav ]" data-dismiss="modal">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]" src="icons/navigation.svg">
+				</button>
+				<div class="[ modal-dialog modal-dialog--nav ]">
+				<!-- Modal content-->
+					<div class="[ modal-content modal-content--nav ]">
+						<div class="[ modal-body ]">
+							<a href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/youtube.svg"></a>
+							<a href="https://www.instagram.com/sallybeautymx/"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/instagram.svg"></a>
+							<a href="https://twitter.com/SallyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/twitter.svg"></a>
+							<a href="https://www.facebook.com/SallyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/facebook.svg"></a>
+						</div>
+					</div>
 				</div>
 			</div>
+
 		</header>
-		<div class="video_background">
+		<div class="[ video_background ]">
 
-
-			<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
+				<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
 
 				<div id='myVideo-start-screen'>
 				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
+				</div>
+
+				<div class='cameratag_countdown_status'>
+
+				</div>
+				<div class='cameratag_stop_recording'>
+
+				</div>
+				<div class="[ cameratag_record_timer_prompt ]">
+
+				</div>
+				<div class="[ cameratag_play ]">
+
+				</div>
+				<div class="[ cameratag_stop_playback ][ hide ]">
+
+				</div>
+				<div class="[ cameratag_publish ][ hide ]">
+					<section class="[ container ][ center-full margin--landscape ] margin-top--large">
+						<img class="[ img-responsive img-title ]" src="img/title-1.png">
+						<div class="[ js-video-container ]"></div>
+						<div class="[ text-center ][ margin-top ][ padding-movil ]">
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-continuar ]" >
+									<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
+									<div class="[ visible-xs ][ margin-bottom ]"></div>
+								</div>
+							</div>
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-video-opener ]">
+									<a class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
+									<div class="[ visible-xs ][ margin-bottom ]"></div>
+								</div>
+							</div>
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-volver ]">
+									<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="[ cameratag_error_message ]">
+
 				</div>
 		</div>
 

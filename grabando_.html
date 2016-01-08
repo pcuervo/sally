@@ -34,7 +34,6 @@
 		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="css/camera_styles.css">
 		<!-- Google font(s) -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 
@@ -140,15 +139,15 @@
 			</div>
 
 		</header>
-		<div class="[ video_background ][ bg-black ][ js-video-wrapper ]">
-			<div class="[ embed-responsive-item ]">
-				<camera class="camera_tag " id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
+		<div class="[ video_background ][ bg-black ][  ]">
+			<div class="[ embed-responsive ]">
+				<camera class="camera_tag embed-responsive-item " id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
 
 				<div id='myVideo-start-screen'>
 				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
 				</div>
 			</div>
-			
+
 		</div>
 
 
@@ -169,10 +168,6 @@
 				/**
 				 * Triggered events
 				**/
-				//$('#send_btn').popover({content: 'Thank You'},'click');
-			});
-		</script>
-		<script type="text/javascript">
 
 				CameraTag.observe('myVideo', 'initialized', function () {
 					document.getElementById('grabar').click();
@@ -180,33 +175,13 @@
 				});
 
 				CameraTag.observe('myVideo', 'published', function(){
-
 					var api_key = "Vw-bKoSv7bjYq-ekXhzL";
-
-				 	var uuid = document.getElementById("myVideo_video_uuid").value;
-
-				 	window.location.href = 'http://localhost:8888/sally/sally/exito.html';
+					var uuid = document.getElementById("myVideo_video_uuid").value;
+					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
 
-
-
-
+			});
 		</script>
-		<style type="text/css">
 
-			#myVideo{
-
-				    margin-left: 14%;
-	  				margin-right: auto;
-
-			}
-
-			.video_background{
-				background-color: black;
-			}
-
-		</style>
 	</body>
 </html>
-
-
