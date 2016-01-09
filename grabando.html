@@ -140,10 +140,51 @@
 			</div>
 
 		</header>
-		<div class="[ bg-black ]">
+		<div class="[ bg-primary ]">
 			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180'></camera>
-			<div id='myVideo-start-screen'>
-			  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
+			<div id="myVideo-start-screen" class="cameratag_screen">
+				<a id="grabar" class="cameratag_record">Haz click para comenzar a grabar</a>
+			</div>
+			<div id="myVideo-error-screen"  class="cameratag_screen cameratag_error">
+				<div class="cameratag_error_message"></div>
+				<img class="cameratag_settings_btn" src="//cameratag.com/assets/gear.png">
+			</div>
+			<div id="myVideo-camera-detection-screen "  class="cameratag_screen cameratag_detect">
+				<div class="cameratag_prompt">Saluda a la cámara</div>
+			</div>
+			<div id="myVideo-countdown-screen"  class="cameratag_screen cameratag_count">
+				<div class="cameratag_countdown_status">1</div>
+				<div class="cameratag_prompt">Grabando en... </div>
+			</div>
+			<!-- <div class="cameratag_paused">
+				<div class="cameratag_paused_message">Oh No! It looks like your browser paused the recorder</div>
+			</div> -->
+			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
+				<div class="cameratag_upload_status"></div>
+				<div class="cameratag_prompt">Subiendo...</div>
+			</div> -->
+			<div id="myVideo-recording-screen "  class="cameratag_screen cameratag_recording cameratag_stop_recording">
+				<div class="cameratag_prompt">Haz click para dejar de grabar<span class="cameratag_record_timer_prompt">(140)</span></div>
+				<img src="//www.cameratag.com/assets/recording.gif">
+			</div>
+			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_playback cameratag_stop_playback">
+				<div class="cameratag_prompt">Haz click para continuar</div>
+			</div> -->
+			<div id="myVideo-accept-screen "  class="cameratag_screen cameratag_accept">
+				<a class="cameratag_accept_btn cameratag_publish"><span class="button_label">✓ Aceptar</span></a>
+				<a class="cameratag_rerecord_btn cameratag_record"><span class="button_label">♻ Volver a Grabar</span></a>
+				<a class="cameratag_play_btn cameratag_play"><span class="button_label">↵ Ver Video</span></a>
+			</div>
+			<div id="myVideo-wait-screen n"  class="cameratag_screen cameratag_wait">
+				<div class="cameratag_spinner">
+					<img src="//www.cameratag.com/assets/loading.gif">
+					<br>
+					<span class="cameratag_wait_message">conectando...</span>
+				</div>
+			</div>
+			<div id="myVideo-completed-screen "  class="cameratag_screen cameratag_completed">
+				<div class="cameratag_thumb_bg"></div>
+				<div class="cameratag_checkmark"><span class="check">✔</span> Video Publicado</div>
 			</div>
 		</div>
 
