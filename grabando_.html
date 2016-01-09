@@ -139,16 +139,17 @@
 			</div>
 
 		</header>
-		<div class="[ video_background ][ bg-black ][  ]">
-			<div class="[ embed-responsive ]">
-				<camera class="camera_tag embed-responsive-item " id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
 
-				<div id='myVideo-start-screen'>
-				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
-				</div>
+
+		<div class="[ video_background ][ bg-black ]">
+
+			<camera class="camera_tag embed-responsive" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
+			<div id='myVideo-start-screen'>
+			  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
 			</div>
 
 		</div>
+		
 
 
 	  	<script src='//cameratag.com/api/v6/js/cameratag.js' type='text/javascript'></script>
@@ -179,6 +180,10 @@
 					var uuid = document.getElementById("myVideo_video_uuid").value;
 					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
+
+				$(".js-video-wrapper").fitVids();
+
+				$("#thing-with-videos").fitVids({ customSelector: "#myVideo_swf"});
 
 			});
 		</script>
