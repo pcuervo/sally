@@ -140,17 +140,12 @@
 
 		</header>
 
+
 		<div class="[ video_background ][ bg-black ]">
 
-			<div class="[  ]">
-
-				<div class="[  ]">
-					<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
-					<div id='myVideo-start-screen'>
-					  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
-					</div>
-				</div>
-				
+			<camera class="camera_tag embed-responsive" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
+			<div id='myVideo-start-screen'>
+			  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
 			</div>
 
 		</div>
@@ -186,15 +181,11 @@
 					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
 
+				$(".js-video-wrapper").fitVids();
+
+				$("#thing-with-videos").fitVids({ customSelector: "#myVideo_swf"});
+
 			});
-		</script>
-		<script src="path/to/jquery.min.js"></script>
-		<script src="path/to/jquery.fitvids.js"></script>
-		<script>
-		  $(document).ready(function(){
-		    // Target your .container, .wrapper, .post, etc.
-		    $("#thing-with-videos").fitVids();
-		  });
 		</script>
 
 	</body>
