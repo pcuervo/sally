@@ -99,7 +99,7 @@
 		</script>
 	</head>
 	<body class="[ bg-primary ][ color-light ]">
-		<header class="[ container ][  ]">
+		<header class="[ container ][ margin-bottom ]">
 			<a href="index.html">
 				<img class="[ logo ]" src="img/logo.jpg">
 			</a>
@@ -140,11 +140,57 @@
 			</div>
 
 		</header>
-		<div class="[ bg-black ]">
-			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180'></camera>
-			<div id='myVideo-start-screen'>
-			  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
-			</div>
+		<div class="[ video_background ]">
+
+				<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
+
+				<div id='myVideo-start-screen'>
+				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
+				</div>
+
+				<div class='cameratag_countdown_status'>
+
+				</div>
+				<div class='cameratag_stop_recording'>
+
+				</div>
+				<div class="[ cameratag_record_timer_prompt ]">
+
+				</div>
+				<div class="[ cameratag_play ]">
+
+				</div>
+				<div class="[ cameratag_stop_playback ][ hide ]">
+
+				</div>
+				<div class="[ cameratag_publish ][ hide ]">
+					<section class="[ container ][ center-full margin--landscape ] margin-top--large">
+						<img class="[ img-responsive img-title ]" src="img/title-1.png">
+						<div class="[ js-video-container ]"></div>
+						<div class="[ text-center ][ margin-top ][ padding-movil ]">
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-continuar ]" >
+									<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
+									<div class="[ visible-xs ][ margin-bottom ]"></div>
+								</div>
+							</div>
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-video-opener ]">
+									<a class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
+									<div class="[ visible-xs ][ margin-bottom ]"></div>
+								</div>
+							</div>
+							<div class="[ inline-block align-middle ]">
+								<div class="[ js-volver ]">
+									<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="[ cameratag_error_message ]">
+
+				</div>
 		</div>
 
 
@@ -160,29 +206,48 @@
 				 * On ready
 				**/
 				imgToSvg();
+
+
 				/**
 				 * Triggered events
 				**/
+				//$('#send_btn').popover({content: 'Thank You'},'click');
+			});
+		</script>
+		<script type="text/javascript">
 
 				CameraTag.observe('myVideo', 'initialized', function () {
 					document.getElementById('grabar').click();
+
 				});
 
 				CameraTag.observe('myVideo', 'published', function(){
+
 					var api_key = "Vw-bKoSv7bjYq-ekXhzL";
+
 				 	var uuid = document.getElementById("myVideo_video_uuid").value;
 
-				 	//Delete cookie in case user navigates back
-				 	document.cookie = "uuid =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-
-				 	document.cookie = "uuid = " + uuid;
-
-				 	window.location.href = 'http://localhost:8888/sally/sally/exito.php';
-
+				 	window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
 
-			});
+
+
+
 		</script>
+		<style type="text/css">
+
+			#myVideo{
+
+				    margin-left: 14%;
+	  				margin-right: auto;
+
+			}
+
+			.video_background{
+				background-color: black;
+			}
+
+		</style>
 	</body>
 </html>
 

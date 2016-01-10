@@ -121,6 +121,7 @@
 
 .bg-primary{ background-color: @primary;}
 .bg-light{ background-color: @light;}
+.bg-black{ background-color: #000;}
 .bg-gray--light{ background-color: @gray-lighter; }
 .bg-gray--xlight{ background-color: @gray-xlight; }
 .bg-gray--dark{ background-color: @gray-xxlight; }
@@ -181,6 +182,7 @@
 .padding--right--xxlarge{ padding-right: (@padding-base-vertical*8); }
 
 .no-padding--left{ padding-left: 0; }
+.no-padding--left--sm{ @media (min-width: @screen-sm){ padding-left: 0;} }
 .padding--left{ padding-left: (@padding-base-vertical*2); }
 .padding--left--small{ padding-left: (@padding-base-vertical); }
 .padding--left--large{ padding-left: (@padding-base-vertical*4); }
