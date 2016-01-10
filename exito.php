@@ -81,38 +81,46 @@
 				</div>
 			</div>
 			<div class="[ form-tutorial ][ col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ][ color-light ][ margin-bottom--large ]">
-				<form>
+				
+				<form id="myForm" method="post">
 				<label class="[ text-uppercase ][ fz-small ][ letter-spacing--small ] ">Nombre</label>
-				<input class="[ form-control ][ margin-bottom ]">
+				<input id="name" class="[ form-control ][ margin-bottom ]" name="name">
+				<input id="video_uuid" type="hidden" name="video_uuid">
 				<label class="[ text-uppercase ][ fz-small ][ letter-spacing--small ] ">Título del tutorial</label>
-				<input class="[ form-control ][ margin-bottom ]">
+				<input id="title" class="[ form-control ][ margin-bottom ]" name="title">
 				<label class="[ text-uppercase ][ fz-small ][ letter-spacing--small ] ">Resume tu tutorial en tres frases:</label>
 					<div class="[ input-group ][ margin-bottom ]">
 						<span class="[ input-group-addon ]">1</span>
-						<input type="text" class="[ form-control ]">
+						<input id="frase1" type="text" class="[ form-control ]" name="frase1">
 					</div>
 					<div class="[ input-group ][ margin-bottom ]">
 						<span class="[ input-group-addon ]">2</span>
-						<input type="text" class="[ form-control ]">
+						<input id="frase2" type="text" class="[ form-control ]" name="frase2">
 					</div>
 					<div class="[ input-group ][ margin-bottom ]">
 						<span class="[ input-group-addon ]">3</span>
-						<input type="text" class="[ form-control ]">
+						<input id="frase3" type="text" class="[ form-control ]" name="frase3">
 					</div>
 					<label class="[ text-uppercase ][ fz-small ][ letter-spacing--small ] ">Categoría</label>
-					<select class="[ form-control select-categorias ] ">
+					<select id="category" class="[ form-control select-categorias ] " name="category" >
 						<option>Ojos</option>
 						<option>Cabello</option>
 						<option>Uñas</option>
 						<option>Labios</option>
-						<option><?php echo "Test"; ?></option>
 					</select>
+
+					<div class="[ col-xs-12 ][ margin-bottom--xlarge ][ text-center ]">
+						<!--<input type="submit" value="Continuar">-->
+						<a href="#" class="[ btn btn-primary ] " onclick="$(this).closest('form').submit()">Continuar</a>
+						<!--<a href="vobo.html" class="[ btn btn-primary ] ">Continuar</a>-->
+					</div>
+
+
 				</form>
 			</div>
 
-			<div class="[ col-xs-12 ][ margin-bottom--xlarge ][ text-center ]">
-				<a href="vobo.html" class="[ btn btn-primary ]">Continuar</a>
-			</div>
+			
+  
 		</section>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -129,7 +137,58 @@
 				/**
 				 * Triggered events
 				**/
+
 			});
+		</script>
+		<script type="text/javascript">
+
+			function getCookie(cname) {
+				    var name = cname + "=";
+				    var ca = document.cookie.split(';');
+				    for(var i=0; i<ca.length; i++) {
+				        var c = ca[i];
+				        while (c.charAt(0)==' ') c = c.substring(1);
+				        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+				    }
+				    return "";
+				}
+				var uuid = getCookie("uuid");
+				$("#video_uuid").val(uuid);
+				
+
+				//add exception handler 
+
+				var request;
+
+				$("form").on('submit',function(e) {
+        		
+	        		var video_uuid = document.getElementById("video_uuid").value;	
+	        		var name = document.getElementById("name").value;
+					var title = document.getElementById("title").value;
+					var frase1 = document.getElementById("frase1").value;
+					var frase2 = document.getElementById("frase2").value;
+					var frase3 = document.getElementById("frase3").value;
+					var category = document.getElementById("category").value;
+
+        				// Abort any pending request
+					    if (request) {
+					        request.abort();
+					    }
+
+					    // setup some local variables
+					    var $form = $("#myForm");
+
+					    // Let's select and cache all the fields
+					    var $inputs = $form.find("input, select, button, textarea");
+
+					    var postData = $("#myForm").serialize();
+
+					    console.log(postData);
+					    
+					    e.preventDefault();
+
+        		});
+
 		</script>
 	</body>
 </html>
