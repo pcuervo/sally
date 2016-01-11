@@ -136,15 +136,13 @@
 		<div class="[ bg-primary ]">
 			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180' data-cssurl='camera-no-style.css'></camera>
 
-			<div id="myVideo-start-screen" class="cameratag_screen">
+			<div id="myVideo-start-screen" class="cameratag_screen [ visible-xs ]">
 				<a id="grabar" class="cameratag_record [ color-light ][ center-full ]">
-					<div class="[ visible-xs ]">
-						<img class="[ img-responsive img-title ]" src="img/title-1.png">
-						<img class="[ svg icon--iconed icon--stroke ][ color-light ]" src="icons/webcam.svg">
-						<p class="[ text-uppercase ][ no-margin ]"><strong>Comencemos</strong></p>
-						<p>¿Estás lista para contarnos tu tip?</p>
-						<div class="cameratag_btn">Estoy lista</div>
-					</div>
+					<img class="[ img-responsive img-title ]" src="img/title-1.png">
+					<img class="[ svg icon--iconed icon--stroke ][ color-light ]" src="icons/webcam.svg">
+					<p class="[ text-uppercase ][ no-margin ]"><strong>Comencemos</strong></p>
+					<p>¿Estás lista para contarnos tu tip?</p>
+					<div class="cameratag_btn">Estoy lista</div>
 				</a>
 			</div>
 			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
@@ -159,9 +157,8 @@
 			</div> -->
 			<div id="myVideo-error-screen"  class="cameratag_screen cameratag_error">
 				<div class="cameratag_error_message">
-					<img class="[ svg icon--iconed--large icon--stroke icon--responsive ][ color-light ]" src="icons/warning.svg">
-					<br>
-					<span>Error al conectar con servidor</span>
+					<img class="[ svg icon--iconed--xxlarge icon--stroke icon--responsive ][ color-light ]" src="icons/warning.svg">
+					No camera detected
 				</div>
 				<img class="cameratag_settings_btn" src="//cameratag.com/assets/gear.png">
 			</div>
@@ -180,7 +177,7 @@
 			</div>
 			<div id="myVideo-countdown-screen"  class="cameratag_screen cameratag_count">
 				<div class="[ cameratag_countdown_status ][ color-primary ][ font-title ]">1</div>
-				<div class="[ cameratag_prompt ][ color-light ][ font-title ]">Grabando en…</div>
+				<div class="[ cameratag_prompt ][ color-light ][ font-title ][ padding-bottom ]">Grabando en…</div>
 			</div>
 			<!--<div id="myVideo-error-screen" class="cameratag_paused"> -->
 				<!-- <div class="cameratag_paused_message">Oh No! It looks like your browser paused the recorder</div> -->

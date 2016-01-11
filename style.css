@@ -6045,7 +6045,7 @@ button.list-group-item-danger.active:focus {
   margin: auto;
   background: #f90e42;
   color: #fff;
-  font-family: "Gotham", sans-serif;
+  font-family: 'futura-pt', sans-serif;
   position: relative;
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -6117,7 +6117,7 @@ button.list-group-item-danger.active:focus {
 }
 .camera_tag .cameratag_screen .cameratag_prompt {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
 }
@@ -6215,6 +6215,7 @@ button.list-group-item-danger.active:focus {
   left: 0px;
   right: 0px;
   text-align: center;
+  text-transform: uppercase;
   top: 50%;
   margin-top: -1.5em;
   font-size: 2em;
