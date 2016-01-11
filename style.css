@@ -1536,6 +1536,14 @@ p {
     font-size: 16px;
   }
 }
+.font-tittle {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ff-futura {
+  font-family: 'futura-pt', sans-serif;
+}
 .p--xs {
   font-size: 10px;
 }
@@ -6148,7 +6156,8 @@ button.list-group-item-danger.active:focus {
 }
 .camera_tag .cameratag_screen.cameratag_count .cameratag_countdown_status,
 .camera_tag .cameratag_screen.cameratag_upload .cameratag_upload_status {
-  font-size: 4em;
+  font-size: 8em;
+  color: #f90e42;
   position: absolute;
   top: 50%;
   margin-top: -0.6em;
@@ -6163,11 +6172,13 @@ button.list-group-item-danger.active:focus {
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn {
+  font-family: 'futura-pt', sans-serif;
   display: inline-block;
   width: auto;
   margin-bottom: 3%;
   padding: 12px 24px;
   text-align: center;
+  text-transform: uppercase;
   color: #000;
   background: #fff;
 }
@@ -6204,7 +6215,7 @@ button.list-group-item-danger.active:focus {
   width: 40px;
 }
 .camera_tag .cameratag_screen.cameratag_completed {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_completed .cameratag_thumb_bg {
   position: absolute;
@@ -6224,7 +6235,7 @@ button.list-group-item-danger.active:focus {
   width: 100%;
 }
 .camera_tag .cameratag_screen.cameratag_completed .cameratag_checkmark .check {
-  color: #09a72e;
+  color: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_error {
   background: #000;
