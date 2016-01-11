@@ -156,8 +156,7 @@
 				</div>
 				<img class="cameratag_settings_btn" src="//cameratag.com/assets/gear.png">
 			</div>
-			<!-- <div id="myVideo-camera-detection-screen"  class="cameratag_screen cameratag_detect">
-
+			<div id="myVideo-camera-detection-screen"  class="cameratag_screen cameratag_detect">
 				<div class="cameratag_prompt [ color-light ][ dt ][ large ][ center-full ]">
 					<section class="[ container ][ text-center ][ center-full margin--landscape ]">
 						<img class="[ img-responsive img-title ]" src="img/title-1.png">
@@ -176,13 +175,23 @@
 			</div>
 			<div id="myVideo-error-screen" class="cameratag_paused"> -->
 				<!-- <div class="cameratag_paused_message">Oh No! It looks like your browser paused the recorder</div> -->
-			<!-- 	<div class="cameratag_paused_message [ center-full ]">Chale!</div>
+				<div class="cameratag_paused_message [ center-full ]">Chale!</div>
 			 </div>
 			<div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
 				<div class="cameratag_upload_status"></div>
 				<div class="cameratag_screen__info "></div>
 				<div class="cameratag_prompt [ font-tittle ] [ center-full ]">Subiendo…</div>
 			</div>
+
+			<div id="myVideo-error-screen" class="cameratag_paused">
+                <!-- <div class="cameratag_paused_message">Oh No! It looks like your browser paused the recorder</div> -->
+                <div class="cameratag_paused_message [ center-full ]">Chale!</div>
+             </div>
+            <div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
+                <div class="cameratag_upload_status"></div>
+                <div class="cameratag_screen__info "></div>
+                <div class="cameratag_prompt [ font-tittle ] [ center-full ]">Subiendo…</div>
+            </div>
 
 			<div id="myVideo-recording-screen" class="cameratag_screen cameratag_recording cameratag_stop_recording">
 				<div class="[ cameratag_prompt ][ margin-sides--small ][ text-center ]">
@@ -200,7 +209,9 @@
 				</div>
 			</div>
 			<div id="myVideo-start-screen"  class="cameratag_screen cameratag_playback cameratag_stop_playback">
-				<div class="cameratag_prompt [ font-tittle ][ center-full ]">Haz click para continuar</div>
+				<div class="cameratag_prompt [ font-tittle ][ center-full ]">
+					<p class="[ large ][ no-margin ]"><strong>Haz click para continuar</strong></p>
+				</div>
 			</div>
 			<div id="myVideo-accept-screen"  class="cameratag_screen cameratag_accept">
 				<div class="[ center-full ]">
@@ -210,9 +221,9 @@
 					<a class="cameratag_rerecord_btn cameratag_record"><span class="button_label">Volver a Grabar</span></a>
 				</div>
 			</div>
-			<div id="myVideo-wait-screen n"  class="cameratag_screen cameratag_wait">
-				<div class="cameratag_spinner [ center-full ]">
-					<img src="//www.cameratag.com/assets/loading.gif" class="[ margin-bottom--small ]">
+			<div id="myVideo-wait-screen"  class="cameratag_screen cameratag_wait">
+				<div class="cameratag_spinner">
+					<img src="//www.cameratag.com/assets/loading.gif" class="[ margin-bottom ]">
 					<br>
 					<span class="cameratag_wait_message [ color-light ][ font-tittle ]">Conectando...</span>
 				</div>
@@ -222,7 +233,6 @@
 				<div class="cameratag_checkmark [ font-tittle ]"><span class="check">✔</span> Video Publicado</div>
 			</div>
 		</div>
- -->
 
 	  	<script src='//cameratag.com/api/v6/js/cameratag.js' type='text/javascript'></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
