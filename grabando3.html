@@ -136,6 +136,7 @@
 		</header>
 		<div class="[ bg-primary ]">
 			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180' data-cssurl='camera-no-style.css'></camera>
+
 			<div id="myVideo-start-screen" class="cameratag_screen">
 				<a id="grabar" class="cameratag_record [ color-light ][ center-full ]">
 					<div class="[ visible-xs ]">
@@ -152,8 +153,17 @@
 				<img class="cameratag_settings_btn" src="//cameratag.com/assets/gear.png">
 			</div> -->
 			<div id="myVideo-camera-detection-screen"  class="cameratag_screen cameratag_detect">
-				<div class="cameratag_prompt [ color-light ][ font-tittle ][ center-full ]">
-					Saluda a la cámara…
+
+				<div class="cameratag_prompt [ color-light ][ dt ][ large ][ center-full ]">
+					<section class="[ container ][ text-center ][ center-full margin--landscape ]">
+						<img class="[ img-responsive img-title ]" src="img/title-1.png">
+						<div class="[ ico-small ][ margin-auto margin-bottom ][ relative ]">
+							<img class="[ svg icon--stroke icon--responsive ][ color-light ]" src="icons/webcam.svg">
+						</div>
+						<div class="[ margin-bottom ]">
+							<p class="[ large ][ no-margin ]"><strong>Saluda a la cámara …</strong></p>
+						</div>
+					</section>
 				</div>
 			</div>
 			<div id="myVideo-countdown-screen"  class="cameratag_screen cameratag_count">
@@ -166,18 +176,24 @@
 			<!-- </div> -->
 			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
 				<div class="cameratag_upload_status"></div>
+				<div class="cameratag_prompt">Subiendo...</div>
+				<div class="cameratag_screen__info "></div>
 				<div class="cameratag_prompt [ color-light ][ large ]">Subiendo…</div>
 			</div> -->
+
 			<div id="myVideo-recording-screen" class="cameratag_screen cameratag_recording cameratag_stop_recording">
-				<div class="[ cameratag_screen__info ][ width-100 ][ text-center ]">
-					<p class="[ text-uppercase ]"><strong>Grabando</strong></p>
-					<img src="//www.cameratag.com/assets/recording.gif"> <p class="[ cameratag_record_timer_prompt ]">(140)</p>
-				</div>
-				<div class="[ cameratag_prompt ][ margin-sides--small ]">
-					<p class="[ text-uppercase ]"><strong>stop</strong></p>
-					<div class="[ ico-small ] [ margin-auto ]">
-						<img class="[ svg icon--stroke icon--responsive  ][ color-primary ]" src="icons/sopt-button.svg">
+				<div class="[ cameratag_prompt ][ margin-sides--small ][ text-center ]">
+					<div class="[ cameratag_screen__info ]">
+						<p class="[ text-uppercase ]"><strong>Grabando</strong></p>
+						<img src="//www.cameratag.com/assets/recording.gif"> <p class="[ cameratag_record_timer_prompt ]">(140)</p>
 					</div>
+					<div class="[ cameratag_screen__info_stop ]">
+						<p class="[ text-uppercase ]"><strong>stop</strong></p>
+						<div class="[ ico-small ] [ margin-auto ]">
+							<img class="[ svg icon--stroke icon--responsive  ][ color-primary ]" src="icons/stop-button.svg">
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_playback cameratag_stop_playback">

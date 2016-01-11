@@ -6178,6 +6178,7 @@ button.list-group-item-danger.active:focus {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .camera_tag .cameratag_screen.cameratag_accept {
+  background-color: rgba(249, 14, 66, 0.5);
   padding: 10px;
 }
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
@@ -6381,6 +6382,16 @@ button.list-group-item-danger.active:focus {
   float: left;
   background: #c7084b;
   color: #fff;
+}
+.cameratag_screen__info {
+  position: absolute;
+  bottom: 50px;
+  left: 350px;
+}
+.cameratag_screen__info_stop {
+  position: absolute;
+  bottom: 60px;
+  left: 500px;
 }
 .intl-tel-input {
   position: relative;
