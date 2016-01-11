@@ -98,24 +98,50 @@
 			CT_i18n[41] = CT_i18n[41] || 'Oh No! It looks like your browser paused the recorder'
 		</script>
 	</head>
-	<body>
-		<header class="[ container ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<a href="index.html">
-						<img class="[ logo ]" src="img/logo1.png">
-					</a>
+	<body class="[ bg-primary ][ color-light ]">
+		<header class="[ container ][  ]">
+			<a href="index.html">
+				<img class="[ logo ]" src="img/logo.jpg">
+			</a>
+			<span class="[ visible-xs ][ pull-right ]">
+				<a type="button" data-toggle="modal" data-target="#modal-nav">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]" src="icons/navigation.svg">
+				</a>
+			</span>
+			<span class="[ hidden-xs ][ pull-right ]">
+				<a  href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/youtube.svg"></a>
+				<a href="https://www.instagram.com/sallybeautymx/"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/instagram.svg"></a>
+				<a href="https://twitter.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg"></a>
+				<a href="https://www.facebook.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg"></a>
+			</span>
+			<div class="[ return ]">
+				<a href="comencemos.html">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]"  src="icons/atras.svg">
+					<p class="[ fz-xsmall ]">atrás</p>
+				</a>
+			</div>
+
+			<!-- Modal Menú-->
+			<div id="modal-nav" class="[ modal fade ]" role="dialog">
+				<button type="button" class="[ close close--nav ]" data-dismiss="modal">
+					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]" src="icons/navigation.svg">
+				</button>
+				<div class="[ modal-dialog modal-dialog--nav ]">
+				<!-- Modal content-->
+					<div class="[ modal-content modal-content--nav ]">
+						<div class="[ modal-body ]">
+							<a href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/youtube.svg"></a>
+							<a href="https://www.instagram.com/sallybeautymx/"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/instagram.svg"></a>
+							<a href="https://twitter.com/SallyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/twitter.svg"></a>
+							<a href="https://www.facebook.com/SallyMexico"  target="_blank"><img class="[ svg icon--iconed--large icon--thickness-3 icon--fill ][ color-light ][ margin-sides--small ]" src="icons/facebook.svg"></a>
+						</div>
+					</div>
 				</div>
 			</div>
+
 		</header>
-		<div class="video_background">
-
-
-			<camera class="camera_tag" id='myVideo' data-app-id='a-34d1cc40-93b6-0133-b486-22000b789ce2' data-maxlength='180'></camera>
-
-				<div id='myVideo-start-screen'>
-				  <a id="grabar" class='cameratag_record'>Haz click para comenzar a grabar</a>
-				</div>
+		<div class="[ bg-black ]">
+			<camera class="camera_tag" id='myVideo' data-app-id='a-2ff6f020-9856-0133-e782-22000bb743dd' data-maxlength='180'></camera>
 		</div>
 
 
@@ -136,43 +162,19 @@
 				/**
 				 * Triggered events
 				**/
-				//$('#send_btn').popover({content: 'Thank You'},'click');
-			});
-		</script>
-		<script type="text/javascript">
 
 				CameraTag.observe('myVideo', 'initialized', function () {
 					document.getElementById('grabar').click();
-
 				});
 
 				CameraTag.observe('myVideo', 'published', function(){
-
 					var api_key = "Vw-bKoSv7bjYq-ekXhzL";
-
-				 	var uuid = document.getElementById("myVideo_video_uuid").value;
-
-				 	window.location.href = 'http://localhost:8888/sally/sally/exito.html';
+					var uuid = document.getElementById("myVideo_video_uuid").value;
+					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
 				});
 
-
-
-
+			});
 		</script>
-		<style type="text/css">
-
-			#myVideo{
-
-				    margin-left: 14%;
-	  				margin-right: auto;
-
-			}
-
-			.video_background{
-				background-color: black;
-			}
-
-		</style>
 	</body>
 </html>
 
