@@ -6045,7 +6045,7 @@ button.list-group-item-danger.active:focus {
   margin: auto;
   background: #f90e42;
   color: #fff;
-  font-family: "Gotham", sans-serif;
+  font-family: 'futura-pt', sans-serif;
   position: relative;
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -6086,12 +6086,11 @@ button.list-group-item-danger.active:focus {
   display: none;
 }
 .cameratag_paused_message {
-  font-family: 'futura-pt', sans-serif;
-  text-transform: uppercase;
   padding: 5px;
   text-align: center;
+  background: #000;
   color: #fff;
-  font-size: 2em;
+  font-size: .8em;
 }
 .camera_tag .cameratag_settings_btn {
   position: absolute;
@@ -6118,7 +6117,7 @@ button.list-group-item-danger.active:focus {
 }
 .camera_tag .cameratag_screen .cameratag_prompt {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
 }
@@ -6146,17 +6145,6 @@ button.list-group-item-danger.active:focus {
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.cameratag_btn {
-  font-family: 'futura-pt', sans-serif;
-  width: auto;
-  padding: 6px 12px;
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-}
-.cameratag_btn:hover {
-  color: #b6052c;
-}
 .camera_tag .cameratag_screen.cameratag_start .cameratag_record_button .cameratag_record_circle {
   color: #c7084b;
   font-size: 3em;
@@ -6178,8 +6166,12 @@ button.list-group-item-danger.active:focus {
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.camera_tag .cameratag_screen.cameratag_accept {
+  background-color: rgba(249, 14, 66, 0.6);
+  padding: 10px;
+}
 .camera_tag .cameratag_screen.cameratag_wait {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_wait .cameratag_spinner {
   position: absolute;
@@ -6216,13 +6208,14 @@ button.list-group-item-danger.active:focus {
   color: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_error {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_error .cameratag_error_message {
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: center;
+  text-transform: uppercase;
   top: 50%;
   margin-top: -1.5em;
   font-size: 2em;
@@ -8428,6 +8421,9 @@ button.close {
 }
 .width-50 {
   width: 50%;
+}
+.width-90 {
+  width: 90%;
 }
 .width-100 {
   width: 100%;
