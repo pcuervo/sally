@@ -203,15 +203,38 @@
 					<p class="[ large ][ no-margin ]"><strong>Haz click para continuar</strong></p>
 				</div>
 			</div>
-			<div id="myVideo-accept-screen"  class="cameratag_screen cameratag_accept">
-				<div class="[ center-full ]">
+			<div id="myVideo-accept-screen"  class="[ cameratag_screen ][ cameratag_accept ][ width-100 ]">
+				<!--<div class="[ center-full ]">
 					<img class="[ img-responsive img-title ]" src="img/title-1.png">
-					<div class="[ width-90 ]">
+					<div>
 						<a class="cameratag_accept_btn cameratag_publish"><span class="button_label">Continuar</span></a>
 						<a class="cameratag_play_btn cameratag_play"><span class="button_label">Ver Video</span></a>
 						<a class="cameratag_rerecord_btn cameratag_record"><span class="button_label">Volver a Grabar</span></a>
 					</div>
-				</div>
+				</div>-->
+				<section class="[ container ][ center-full margin--landscape ] margin-top--large">
+					<img class="[ img-responsive img-title ]" src="img/title-1.png">
+					<div class="[ js-video-container ]"></div>
+					<div class="[ text-center ][ margin-top ][ padding-movil ]">
+						<div class="[ inline-block align-middle ]">
+							<div class="[ js-continuar ]" >
+								<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
+								<div class="[ visible-xs ][ margin-bottom ]"></div>
+							</div>
+						</div>
+						<div class="[ inline-block align-middle ]">
+							<div class="[ js-video-opener ]">
+								<a class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
+								<div class="[ visible-xs ][ margin-bottom ]"></div>
+							</div>
+						</div>
+						<div class="[ inline-block align-middle ]">
+							<div class="[ js-volver ]">
+								<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 			<div id="myVideo-wait-screen"  class="cameratag_screen cameratag_wait">
 				<div class="cameratag_spinner">
