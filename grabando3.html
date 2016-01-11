@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -148,6 +147,16 @@
 					</div>
 				</a>
 			</div>
+			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
+				<div class="cameratag_upload_status"></div>
+				<div class="cameratag_screen__info "></div>
+				<div class="cameratag_prompt [ font-title ] [ center-full ]">Subiendo…</div>
+			</div> -->
+			<!-- <div id="myVideo-start-screen"  class="cameratag_screen cameratag_playback cameratag_stop_playback">
+				<div class="cameratag_prompt [ font-title ][ center-full ]">
+					<p class="[ large ][ no-margin ]"><strong>Haz click para continuar</strong></p>
+				</div>
+			</div> -->
 			<div id="myVideo-error-screen"  class="cameratag_screen cameratag_error">
 				<div class="cameratag_error_message">
 					<img class="[ svg icon--iconed--large icon--stroke icon--responsive ][ color-light ]" src="icons/warning.svg">
@@ -164,37 +173,20 @@
 							<img class="[ svg icon--stroke icon--responsive ][ color-light ]" src="icons/webcam.svg">
 						</div>
 						<div class="[ margin-bottom ]">
-							<p class="[ large ][ no-margin ]"><strong>Saluda a la cámara …</strong></p>
+							<p class="[ large ][ no-margin ]"><strong>Estamos a punto de comenzar</strong></p>
 						</div>
 					</section>
 				</div>
 			</div>
 			<div id="myVideo-countdown-screen"  class="cameratag_screen cameratag_count">
-				<div class="cameratag_countdown_status [ color-primary ]">1</div>
-				<div class="cameratag_prompt [ color-light ][ font-tittle ]">Grabando en… </div>
+				<div class="[ cameratag_countdown_status ][ color-primary ][ font-title ]">1</div>
+				<div class="[ cameratag_prompt ][ color-light ][ font-title ]">Grabando en…</div>
 			</div>
-			<div id="myVideo-error-screen" class="cameratag_paused">
+			<!--<div id="myVideo-error-screen" class="cameratag_paused"> -->
 				<!-- <div class="cameratag_paused_message">Oh No! It looks like your browser paused the recorder</div> -->
-				<div class="cameratag_paused_message [ center-full ]">Chale!</div>
-			 </div>
-			<div id="myVideo-start-screen"  class="cameratag_screen cameratag_upload">
-				<div class="cameratag_upload_status"></div>
-				<div class="cameratag_screen__info "></div>
-				<div class="cameratag_prompt [ font-tittle ] [ center-full ]">Subiendo…</div>
-			</div>
+				<!-- <div class="cameratag_paused_message [ center-full ]">Chale!</div> -->
+			<!-- </div> -->
 
-<<<<<<< HEAD
-			<div id="myVideo-recording-screen" class="cameratag_screen cameratag_recording cameratag_stop_recording">
-				<div class="[ cameratag_prompt ][ margin-sides--small ][ text-center ]">
-					<div class="[ cameratag_screen__info ]">
-						<p class="[ text-uppercase ]"><strong>Grabando</strong></p>
-						<img src="//www.cameratag.com/assets/recording.gif"> <p class="[ cameratag_record_timer_prompt ]">(140)</p>
-					</div>
-					<div class="[ cameratag_screen__info_stop ]">
-						<p class="[ text-uppercase ]"><strong>stop</strong></p>
-						<div class="[ ico-small ] [ margin-auto ]">
-							<img class="[ svg icon--stroke icon--responsive  ][ color-primary ]" src="icons/stop-button.svg">
-=======
 			<div id="myVideo-recording-screen" class="[ cameratag_screen cameratag_recording cameratag_stop_recording ]">
 				<div class="[ cameratag_prompt ][ text-center ]">
 					<div class="[ row ]">
@@ -207,53 +199,28 @@
 							<div class="[ ico-small ] [ margin-auto ]">
 								<img class="[ svg icon--stroke icon--responsive  ][ color-primary ]" src="icons/stop-button.svg">
 							</div>
->>>>>>> f3f00fa2d7cfaec8cbb1e1a04cb5fa3f17714189
 						</div>
 					</div>
-
 				</div>
 			</div>
-			<div id="myVideo-start-screen"  class="cameratag_screen cameratag_playback cameratag_stop_playback">
-				<div class="cameratag_prompt [ font-tittle ][ center-full ]">
-					<p class="[ large ][ no-margin ]"><strong>Haz click para continuar</strong></p>
+			<div id="myVideo-accept-screen"  class="cameratag_screen cameratag_accept">
+				<div class="[ center-full ][ width-100 ]">
+					<img class="[ img-responsive img-title ]" src="img/title-1.png">
+					<a class="[ cameratag_accept_btn cameratag_publish ][ btn btn-primary btn-auto ]">Continuar</a>
+					<a class="[ cameratag_play_btn cameratag_play ][ btn btn-primary btn-auto ]">Ver Video</a>
+					<a class="[ cameratag_rerecord_btn cameratag_record ][ btn btn-primary btn-auto ]">Volver a Grabar</a>
 				</div>
-			</div>
-			<div id="myVideo-accept-screen"  class="[ cameratag_screen ][ cameratag_accept ][ width-100 ]">
-				<!--<div class="[ center-full ]">
-					<img class="[ img-responsive img-title ]" src="img/title-1.png">
-					<div>
-						<a class="cameratag_accept_btn cameratag_publish"><span class="button_label">Continuar</span></a>
-						<a class="cameratag_play_btn cameratag_play"><span class="button_label">Ver Video</span></a>
-						<a class="cameratag_rerecord_btn cameratag_record"><span class="button_label">Volver a Grabar</span></a>
-					</div>
-				</div>-->
-				<section class="[ container ][ center-full margin--landscape ] margin-top--large">
-					<img class="[ img-responsive img-title ]" src="img/title-1.png">
-					<div class="[ text-center ][ margin-top ][ padding-movil ]">
-						<div class="[ inline-block align-middle ]">
-							<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Continuar</a>
-								<div class="[ visible-xs ][ margin-bottom ]"></div>
-						</div>
-						<div class="[ inline-block align-middle ]">
-							<a class="[ btn btn-primary btn--auto ][ js-video-opener ][ margin-sides--small ]">Ver video</a>
-								<div class="[ visible-xs ][ margin-bottom ]"></div>
-						</div>
-						<div class="[ inline-block align-middle ]">
-							<a href="comencemos.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Volver a grabar</a>
-						</div>
-					</div>
-				</section>
 			</div>
 			<div id="myVideo-wait-screen"  class="cameratag_screen cameratag_wait">
 				<div class="cameratag_spinner">
 					<img src="//www.cameratag.com/assets/loading.gif" class="[ margin-bottom ]">
 					<br>
-					<span class="cameratag_wait_message [ color-light ][ font-tittle ]">Conectando...</span>
+					<span class="cameratag_wait_message [ color-light ][ font-title ]">Conectando...</span>
 				</div>
 			</div>
 			<div id="myVideo-completed-screen"  class="cameratag_screen cameratag_completed">
 				<div class="cameratag_thumb_bg"></div>
-				<div class="cameratag_checkmark [ font-tittle ]"><span class="check">✔</span> Video Publicado</div>
+				<div class="cameratag_checkmark [ font-title ]"><span class="check">✔</span> Video Publicado</div>
 			</div>
 		</div>
 
