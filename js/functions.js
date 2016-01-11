@@ -42,3 +42,10 @@ function emptyVideo(){
     $('.js-video-container').empty();
 }
 
+//Compartir redes
+
+function loadRedes(){
+    $('.js-publicar-container').load( "ajax/comparte.html .js-publicar-element", function(){
+        imgToSvg();
+    });
+}

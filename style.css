@@ -1313,6 +1313,11 @@ mark,
 .text-center {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .text-center--movil {
+    text-align: center;
+  }
+}
 .text-justify {
   text-align: justify;
 }
@@ -8421,6 +8426,9 @@ button.close {
 }
 .width-100 {
   width: 100%;
+}
+.width-auto {
+  width: auto;
 }
 .height-10 {
   height: 10%;
