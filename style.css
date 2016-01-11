@@ -6047,10 +6047,6 @@ button.list-group-item-danger.active:focus {
   color: #fff;
   font-family: 'futura-pt', sans-serif;
   position: relative;
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   .camera_tag {
@@ -6426,7 +6422,6 @@ button.list-group-item-danger.active:focus {
   z-index: 2;
   padding: 0;
   margin: 0 0 0 -1px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background-color: white;
   border: 1px solid #CCC;
   white-space: nowrap;
@@ -7531,7 +7526,6 @@ button.list-group-item-danger.active:focus {
 .iti-flag {
   width: 20px;
   height: 15px;
-  box-shadow: 0px 0px 1px 0px #888;
   background-image: url("http://www.cameratag.com/flags/flags.png");
   background-repeat: no-repeat;
   background-color: #DBDBDB;
