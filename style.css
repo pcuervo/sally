@@ -6163,18 +6163,18 @@ button.list-group-item-danger.active:focus {
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn {
-  display: block;
-  height: 29%;
+  display: inline-block;
+  width: auto;
   margin-bottom: 3%;
+  padding: 12px 24px;
   text-align: center;
-  border: solid 1px white;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn span,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn span,
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn span {
-  display: block;
+  display: inline-block;
   top: 50%;
   position: relative;
   margin-top: -0.5em;
