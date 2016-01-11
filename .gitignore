@@ -39,3 +39,7 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+
+
+# Video
+onion.mp4
