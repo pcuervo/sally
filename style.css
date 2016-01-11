@@ -6145,6 +6145,17 @@ button.list-group-item-danger.active:focus {
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.cameratag_btn {
+  font-family: 'futura-pt', sans-serif;
+  width: auto;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+}
+.cameratag_btn:hover {
+  color: #b6052c;
+}
 .camera_tag .cameratag_screen.cameratag_start .cameratag_record_button .cameratag_record_circle {
   color: #c7084b;
   font-size: 3em;
