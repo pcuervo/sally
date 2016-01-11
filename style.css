@@ -6178,41 +6178,6 @@ button.list-group-item-danger.active:focus {
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.camera_tag .cameratag_screen.cameratag_accept {
-  background-color: rgba(249, 14, 66, 0.7);
-  padding: 10px;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn {
-  font-family: 'futura-pt', sans-serif;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 3%;
-  padding: 12px 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000;
-  background: #fff;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn span {
-  display: inline-block;
-  top: 50%;
-  position: relative;
-  margin-top: -0.5em;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn:hover,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn:hover,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn:hover {
-  border: solid 1px #089fbf;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn:hover span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn:hover span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn:hover span {
-  color: #089fbf;
-}
 .camera_tag .cameratag_screen.cameratag_wait {
   background: #000;
 }
@@ -6383,16 +6348,6 @@ button.list-group-item-danger.active:focus {
   float: left;
   background: #c7084b;
   color: #fff;
-}
-.cameratag_screen__info {
-  position: absolute;
-  bottom: 50px;
-  left: 35%;
-}
-.cameratag_screen__info_stop {
-  position: absolute;
-  bottom: 60px;
-  left: 55%;
 }
 .intl-tel-input {
   position: relative;
