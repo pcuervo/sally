@@ -6086,12 +6086,11 @@ button.list-group-item-danger.active:focus {
   display: none;
 }
 .cameratag_paused_message {
-  font-family: 'futura-pt', sans-serif;
-  text-transform: uppercase;
   padding: 5px;
   text-align: center;
+  background: #000;
   color: #fff;
-  font-size: 2em;
+  font-size: .8em;
 }
 .camera_tag .cameratag_settings_btn {
   position: absolute;
@@ -6179,7 +6178,7 @@ button.list-group-item-danger.active:focus {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .camera_tag .cameratag_screen.cameratag_accept {
-  background-color: rgba(249, 14, 66, 0.7);
+  background-color: rgba(249, 14, 66, 0.6);
   padding: 10px;
 }
 .camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
@@ -8473,6 +8472,9 @@ button.close {
 }
 .width-50 {
   width: 50%;
+}
+.width-90 {
+  width: 90%;
 }
 .width-100 {
   width: 100%;
