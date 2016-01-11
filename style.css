@@ -6171,7 +6171,7 @@ button.list-group-item-danger.active:focus {
   padding: 10px;
 }
 .camera_tag .cameratag_screen.cameratag_wait {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_wait .cameratag_spinner {
   position: absolute;
@@ -6208,7 +6208,7 @@ button.list-group-item-danger.active:focus {
   color: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_error {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_error .cameratag_error_message {
   position: absolute;
