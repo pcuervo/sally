@@ -6250,7 +6250,7 @@ button.list-group-item-danger.active:focus {
   color: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_error {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_error .cameratag_error_message {
   position: absolute;
@@ -6261,6 +6261,8 @@ button.list-group-item-danger.active:focus {
   margin-top: -1.5em;
   font-size: 2em;
   color: #fff;
+  font-family: 'futura-pt', sans-serif;
+  text-transform: uppercase;
 }
 .camera_tag .cameratag_screen.cameratag_sms .cameratag_sms_prompt {
   text-align: left;
