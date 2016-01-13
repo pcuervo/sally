@@ -60,14 +60,13 @@
 				</a>
 			</span>
 			<span class="[ hidden-xs ][ pull-right ]">
-				<a href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank">
-				<img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/youtube.svg"></a>
+				<a  href="https://www.youtube.com/user/SallyBeautyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/youtube.svg"></a>
 				<a href="https://www.instagram.com/sallybeautymx/"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/instagram.svg"></a>
 				<a href="https://twitter.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg"></a>
 				<a href="https://www.facebook.com/SallyMexico"  target="_blank"><img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg"></a>
 			</span>
 			<div class="[ return ]">
-				<a href="exito.html">
+				<a href="comencemos.html">
 					<img class="[ svg icon--stroke icon--iconed icon--thickness-3 ][ color-light ]"  src="icons/atras.svg">
 					<p class="[ fz-xsmall ]">atrás</p>
 				</a>
@@ -92,31 +91,25 @@
 			</div>
 
 		</header>
-		<section class="[ container ][ center-full--desktop ]">
-			<div class="[ margin-top--large ][ visible-xs ]"></div>
-			<div class="[ text-center ]">
-				<img class="[ img-responsive img-title ]" src="img/title-1.png">
-				<div class="[ ico-small ][ margin-auto margin-bottom ][ relative ]">
-					<img class="[ svg icon--stroke icon--responsive ][ color-light ]" src="icons/share.svg">
+
+		<section class="[ container ]">
+			<div class="[ margin-top--xlarge ][ hidden-xs ]"></div>
+			<img class="[ img-responsive img-title ]" src="img/title-1.png">
+			<div class="[ text-center ][ margin-top ]">
+				<div class="[ inline-block align-middle ]">
+					<a href="tutoriales-single.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Ver video</a>
 				</div>
-				<div class="[ row ]">
-					<div class="[ margin-bottom--large ][ col-sm-4 col-sm-offset-4 col-lg-2 col-lg-offset-5 ][ padding-movil ]">
-						<p class="[ text-uppercase ]"><strong>Comparte</strong></p>
-						<p>Muchas gracias por tu tip. Ve  tu resultado y empieza a contagiar al mundo.</p>
-						<a href="https://twitter.com/SallyMexico"  target="_blank">
-							<img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
-						</a>
-						<a href="https://www.facebook.com/SallyMexico"  target="_blank">
-							<img class="[ inline-block align-middle ][ margin-sides--small ][ svg icon--iconed icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
-						</a>
+				<div class="[ clearfix ][ margin-bottom ][ visible-xs ]"></div>
+				<div class="[ inline-block align-middle ]">
+					<a href="exito.html" class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Cambiar información</a>
+				</div>
+				<div class="[ clearfix ][ margin-bottom ][ visible-xs ]"></div>
+				<div class="[ inline-block align-middle ]">
+					<div class="[ js-publicar-opener ]">
+						<a class="[ btn btn-primary btn--auto ][ margin-sides--small ]">Publicar</a>
 					</div>
 				</div>
-				<a type="submit" href="tutoriales-single.html" class="[ btn btn-primary btn--auto ][ margin-bottom margin-right--desktop ]">Ver video</a>
-				<div class="[ clearfix ][ visible-xs ]"></div>
-				<a type="submit" href="exito.html" class="[ btn btn-primary btn--auto ][ margin-bottom ]">Cambiar información</a>
-				<div class="[ clearfix ][ visible-xs ]"></div>
-				<a type="submit" href="tutoriales.html" class="[ btn btn-primary btn--auto ][ margin-bottom margin-left--desktop ]">Publicar</a>
-				<div class="[ margin-top--large ][ visible-xs ]"></div>
+				<div class="[ js-publicar-container ]"></div>
 			</div>
 		</section>
 
@@ -134,6 +127,10 @@
 				/**
 				 * Triggered events
 				**/
+				$('.js-publicar-opener').on('click', function(){
+					loadRedes();
+				});
+
 			});
 		</script>
 	</body>

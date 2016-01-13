@@ -1313,6 +1313,11 @@ mark,
 .text-center {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .text-center--movil {
+    text-align: center;
+  }
+}
 .text-justify {
   text-align: justify;
 }
@@ -1536,6 +1541,14 @@ p {
     font-size: 16px;
   }
 }
+.font-title {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ff-futura {
+  font-family: 'futura-pt', sans-serif;
+}
 .p--xs {
   font-size: 10px;
 }
@@ -1596,6 +1609,14 @@ a:hover {
 @media (min-width: 768px) {
   .fz-small {
     font-size: 14px;
+  }
+}
+.fz--xlarge {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .fz--xlarge {
+    font-size: 24px;
   }
 }
 .fz-xxsmall {
@@ -6023,17 +6044,32 @@ button.list-group-item-danger.active:focus {
  * Camera tag default styles
 **/
 .camera_tag {
-  background: #000;
-  position: relative;
+  display: block;
+  width: 320px !important;
+  height: 240px !important;
+  margin: auto;
+  background: #f90e42;
   color: #fff;
-  width: 924px!important;
-  min-height: 668px;
-  display: inline-block;
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: "Gotham", sans-serif;
+  font-family: 'futura-pt', sans-serif;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .camera_tag {
+    width: 768px !important;
+    height: 576px !important;
+  }
+}
+@media (min-width: 992px) {
+  .camera_tag {
+    width: 869px !important;
+    height: 652px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .camera_tag {
+    width: 869px !important;
+    height: 652px !important;
+  }
 }
 .camera_tag .cameratag_screen {
   display: none;
@@ -6082,9 +6118,8 @@ button.list-group-item-danger.active:focus {
 }
 .camera_tag .cameratag_screen .cameratag_prompt {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   width: 100%;
-  background: #000;
   text-align: center;
 }
 .camera_tag .cameratag_screen.cameratag_start {
@@ -6122,7 +6157,8 @@ button.list-group-item-danger.active:focus {
 }
 .camera_tag .cameratag_screen.cameratag_count .cameratag_countdown_status,
 .camera_tag .cameratag_screen.cameratag_upload .cameratag_upload_status {
-  font-size: 4em;
+  font-size: 8em;
+  color: #f90e42;
   position: absolute;
   top: 50%;
   margin-top: -0.6em;
@@ -6131,45 +6167,12 @@ button.list-group-item-danger.active:focus {
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.camera_tag .cameratag_screen.cameratag_recording img {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 .camera_tag .cameratag_screen.cameratag_accept {
+  background-color: rgba(249, 14, 66, 0.6);
   padding: 10px;
 }
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn {
-  display: block;
-  height: 29%;
-  margin-bottom: 3%;
-  text-align: center;
-  border: solid 1px white;
-  color: #fff;
-  background: #000;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn span {
-  display: block;
-  top: 50%;
-  position: relative;
-  margin-top: -0.5em;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn:hover,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn:hover,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn:hover {
-  border: solid 1px #089fbf;
-}
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_accept_btn:hover span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_rerecord_btn:hover span,
-.camera_tag .cameratag_screen.cameratag_accept .cameratag_play_btn:hover span {
-  color: #089fbf;
-}
 .camera_tag .cameratag_screen.cameratag_wait {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_wait .cameratag_spinner {
   position: absolute;
@@ -6183,7 +6186,7 @@ button.list-group-item-danger.active:focus {
   width: 40px;
 }
 .camera_tag .cameratag_screen.cameratag_completed {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_completed .cameratag_thumb_bg {
   position: absolute;
@@ -6203,16 +6206,17 @@ button.list-group-item-danger.active:focus {
   width: 100%;
 }
 .camera_tag .cameratag_screen.cameratag_completed .cameratag_checkmark .check {
-  color: #09a72e;
+  color: #fff;
 }
 .camera_tag .cameratag_screen.cameratag_error {
-  background: #000;
+  background: #f90e42;
 }
 .camera_tag .cameratag_screen.cameratag_error .cameratag_error_message {
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: center;
+  text-transform: uppercase;
   top: 50%;
   margin-top: -1.5em;
   font-size: 2em;
@@ -6423,7 +6427,6 @@ button.list-group-item-danger.active:focus {
   z-index: 2;
   padding: 0;
   margin: 0 0 0 -1px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background-color: white;
   border: 1px solid #CCC;
   white-space: nowrap;
@@ -7528,7 +7531,6 @@ button.list-group-item-danger.active:focus {
 .iti-flag {
   width: 20px;
   height: 15px;
-  box-shadow: 0px 0px 1px 0px #888;
   background-image: url("http://www.cameratag.com/flags/flags.png");
   background-repeat: no-repeat;
   background-color: #DBDBDB;
@@ -7541,9 +7543,6 @@ button.list-group-item-danger.active:focus {
 }
 .iti-flag.np {
   background-color: transparent;
-}
-#myVideo {
-  margin: auto;
 }
 /**
  * start-screen
@@ -8422,8 +8421,14 @@ button.close {
 .width-50 {
   width: 50%;
 }
+.width-90 {
+  width: 90%;
+}
 .width-100 {
   width: 100%;
+}
+.width-auto {
+  width: auto;
 }
 .height-10 {
   height: 10%;
