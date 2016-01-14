@@ -144,16 +144,13 @@
 
 					<div class="[ col-xs-12 ][ margin-bottom--xlarge ][ text-center ]">
 						<input type="submit" value="Continuar" data-toggle="modal" data-target="#load"class="[ btn btn-primary ]">
-						<!--<a href="vobo.html" class="[ btn btn-primary ]">Continuar</a>-->
 					</div>
 				</form>
-				<div class="modal fade" id="load" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				    		<div class="[ center-full ]">
-								<img src="img/loading.gif" id="loading">
-							</div>
-					    </div>
+				<div class="[ hidden ]" id="loading">
+					<div class="jajajt">
+						<div class="[ center-full ]">
+							<img src="img/loading.gif" id="loading">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -192,7 +189,7 @@
 		}
 
 		$("#loading").hide();
-		
+
 		$("#myForm").submit(function(event){
 
 			var formData = {
@@ -231,7 +228,7 @@
  				document.cookie = "name =;  expires=Thu, 01 Jan 1970 00:00:00 UTC";
  				document.cookie = "name = " +  $("#name_field").val();
  				window.location.href = 'http://localhost:8888/sally/sally/tutoriales-single.html';
-				
+
 			});
 		 event.preventDefault();
 
