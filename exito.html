@@ -148,12 +148,12 @@
 					</div>
 				</form>
 				<div class="modal fade" id="load" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				    		<div class="[ center-full ]">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="[ center-full ]">
 								<img src="img/loading.gif" id="loading">
 							</div>
-					    </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -181,14 +181,14 @@
 
 
 		function getCookie(cname) {
-		    var name = cname + "=";
-		    var ca = document.cookie.split(';');
-		    for(var i=0; i<ca.length; i++) {
-		        var c = ca[i];
-		        while (c.charAt(0)==' ') c = c.substring(1);
-		        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-		    }
-		    return "";
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; i<ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1);
+				if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+			}
+			return "";
 		}
 
 		$("#loading").hide();
@@ -223,14 +223,14 @@
 				console.log(data)
 				$("#loading").hide();
 				document.cookie = "video_url =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
- 				document.cookie = "video_url = " + data.video_url;
+				document.cookie = "video_url = " + data.video_url;
 
- 				document.cookie = "title =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
- 				document.cookie = "title =" +   $("#title_field").val();
+				document.cookie = "title =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+				document.cookie = "title =" +   $("#title_field").val();
 
- 				document.cookie = "name =;  expires=Thu, 01 Jan 1970 00:00:00 UTC";
- 				document.cookie = "name = " +  $("#name_field").val();
- 				window.location.href = 'http://localhost:8888/sally/sally/tutoriales-single.html';
+				document.cookie = "name =;  expires=Thu, 01 Jan 1970 00:00:00 UTC";
+				document.cookie = "name = " +  $("#name_field").val();
+				window.location.href = 'http://localhost:8888/sally/sally/tutoriales-single.html';
 
 			});
 		 event.preventDefault();
