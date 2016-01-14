@@ -6083,6 +6083,9 @@ button.list-group-item-danger.active:focus {
     height: 652px !important;
   }
 }
+.cameratag_screen {
+  display: none;
+}
 .camera_tag .cameratag_screen {
   display: none;
   position: absolute;
