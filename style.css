@@ -1325,7 +1325,7 @@ mark,
   white-space: nowrap;
 }
 .text-lowercase {
-  text-transform: lowercase;
+  text-transform: lowercase!important;
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -3619,6 +3619,17 @@ input[type="button"].btn-block {
   border: 1px solid #fff;
   background-color: #f90e42;
   color: #fff;
+}
+.btn-tertiary {
+  background-color: transparent;
+  border: 1px solid #f90e42;
+  color: #f90e42;
+}
+.btn-tertiary:active,
+.btn-tertiary:hover {
+  background-color: #f90e42 !important;
+  color: #fff;
+  text-transform: lowercase;
 }
 @media (min-width: 768px) {
   .aling--right-btn-primary {
@@ -8391,7 +8402,14 @@ button.close {
 .color-primary {
   color: #f90e42;
 }
+.color-primary--hover:hover,
+.color-primary--hover:focus {
+  color: #f90e42;
+}
 .color-light {
+  color: #fff;
+}
+.color-light--hover:hover {
   color: #fff;
 }
 .color-black {
