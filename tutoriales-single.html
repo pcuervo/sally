@@ -106,18 +106,15 @@
 
 					<div class="[ col-xs-12 ][ margin-bottom--large ]">
 						<div style="text-center">
-							<!--
-							<button onclick="playPause()">Play/Pause</button>
-							<button onclick="makeBig()">Big</button>
-							<button onclick="makeSmall()">Small</button>
-							<button onclick="makeNormal()">Normal</button>
-							<br><br>-->
-							<video id="video1" width="100%" height="100%" controls>
+
+							<!-- <video id="video1" width="100%" height="100%" controls>
 								<source id="mp4_video" src="" type="video/mp4">
 								<source src="" type="video/ogg">
 								<source type="video/webm" src="" />
 								Your browser does not support the video tag.
-							</video>
+							</video> -->
+
+							<video id="video1" width="100%" height="100%" controls></video>
 						</div>
 					</div>
 
@@ -171,7 +168,11 @@
 
 			var title = getCookie("title");
 			var name = getCookie("name");
-			var video_url =  getCookie("video_url");
+			//var video_url =  getCookie("video_url");
+
+			var video_url =  "http://localhost:8888/sally/videos/7aBW6oJ6XY.mp4";
+
+			//console.log(video_url);
 
 			$("#title").html(title);
 			$("#name").html(name);
@@ -187,7 +188,9 @@
 			    return "";
 			}
 
-			$("#video1").find("#mp4_video").attr("src", video_url);
+			var video = $('#video1');
+
+			addSourceToVideo(video, video_url, 'video/mp4');
 
 		</script>
 	</body>
