@@ -134,7 +134,7 @@
 						</div>
 					</div>
 					<label class="[ text-uppercase ][ fz-small ][ letter-spacing--small ] ">Categoría</label>
-					<select class="[ form-control select-categorias ][ margin-bottom ] " name="category" id="category">
+					<select id="loading-hidden" class="[ form-control select-categorias ][ margin-bottom ] " name="category" id="category">
 						<option>Ojos</option>
 						<option>Cabello</option>
 						<option>Uñas</option>
@@ -146,15 +146,22 @@
 						<input type="submit" value="Continuar" data-toggle="modal" data-target="#load"class="[ btn btn-primary ]">
 					</div>
 				</form>
-				<div class="[ hidden ]" id="loading">
-					<div class="jajajt">
-						<div class="[ center-full ]">
-							<img src="img/loading.gif" id="loading">
-						</div>
-					</div>
+			</div>
+			<div class="[ bg-loader ]" id="loading">
+				<div class="[ center-full ]">
+					<img src="icons/loader-.gif" >
+					<p>cargando…</p>
 				</div>
 			</div>
 		</section>
+
+
+		<div class="[ bg-loader ]" id="loading">
+			<div class="[ center-full ][ text-center ]">
+				<img src="icons/loader-.gif" >
+				<p class="[ font-title ][ margin-top--small ]">cargando …</p>
+			</div>
+		</div>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -178,14 +185,14 @@
 
 
 		function getCookie(cname) {
-		    var name = cname + "=";
-		    var ca = document.cookie.split(';');
-		    for(var i=0; i<ca.length; i++) {
-		        var c = ca[i];
-		        while (c.charAt(0)==' ') c = c.substring(1);
-		        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-		    }
-		    return "";
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; i<ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1);
+				if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+			}
+			return "";
 		}
 
 		$("#loading").hide();
@@ -220,15 +227,17 @@
 				console.log(data)
 				$("#loading").hide();
 				document.cookie = "video_url =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
- 				document.cookie = "video_url = " + data.video_url;
+				document.cookie = "video_url = " + data.video_url;
 
- 				document.cookie = "title =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
- 				document.cookie = "title =" +   $("#title_field").val();
+				document.cookie = "title =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+				document.cookie = "title =" +   $("#title_field").val();
 
+				document.cookie = "name =;  expires=Thu, 01 Jan 1970 00:00:00 UTC";
+				document.cookie = "name = " +  $("#name_field").val();
+				window.location.href = 'http://localhost:8888/sally/sally/tutoriales-single.html';
  				document.cookie = "name =;  expires=Thu, 01 Jan 1970 00:00:00 UTC";
  				document.cookie = "name = " +  $("#name_field").val();
  				window.location.href = 'http://localhost:8888/sally/sally/tutoriales-single.html';
-
 			});
 		 event.preventDefault();
 
