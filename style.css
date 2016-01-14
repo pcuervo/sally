@@ -3626,6 +3626,7 @@ input[type="button"].btn-block {
   color: #f90e42;
 }
 .btn-tertiary:active,
+.btn-tertiary .active,
 .btn-tertiary:hover {
   background-color: #f90e42 !important;
   color: #fff;
