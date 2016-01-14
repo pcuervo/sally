@@ -157,8 +157,7 @@
 				 * On ready
 				**/
 				imgToSvg();
-
-
+ 
 				/**
 				 * Triggered events
 				**/
@@ -170,7 +169,12 @@
 				CameraTag.observe('myVideo', 'published', function(){
 					var api_key = "Vw-bKoSv7bjYq-ekXhzL";
 					var uuid = document.getElementById("myVideo_video_uuid").value;
-					window.location.href = 'http://localhost:8888/sally/exito.html';
+					
+					//Delete cookie in case user navigates back
+ 				 	document.cookie = "uuid =; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+ 				 	document.cookie = "uuid = " + uuid;
+					window.location.href = 'http://localhost:8888/sally/sally/exito.html';
+
 				});
 
 			});
