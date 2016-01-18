@@ -177,6 +177,18 @@ input[type="button"] {
   background-color: @primary;
   color: @light;
 }
+.btn-tertiary{
+  background-color: transparent;
+  border: 1px solid @primary;
+  color: @primary;
+  &:active,
+  & .active,
+  &:hover{
+    background-color: @primary!important;
+    color: @light;
+    text-transform: lowercase;
+  }
+}
 
 .aling--right-btn-primary{
   @media (min-width: @screen-sm){ text-align: right;}

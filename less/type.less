@@ -94,11 +94,12 @@ mark,
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
+.text-center--movil  {   @media (max-width: @screen-sm){text-align: center; }}
 .text-justify        { text-align: justify; }
 .text-nowrap         { white-space: nowrap; }
 
 // Transformation
-.text-lowercase      { text-transform: lowercase; }
+.text-lowercase      { text-transform: lowercase!important; }
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
@@ -322,6 +323,16 @@ p{
   font-style: normal;
 }
 
+.font-title{
+  font-family: 'futura-pt', sans-serif ;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ff-futura{
+  font-family: 'futura-pt', sans-serif ;
+}
+
   .p--xs{
     font-size: 10px;
     @media (min-width: @screen-xs){font-size: 12px;}
@@ -359,7 +370,9 @@ a:hover{
 .fz-small{ font-size: 12px;
   @media (min-width: @screen-sm){ font-size: 14px;}
 }
-
+.fz--xlarge{ font-size: 20px;
+  @media (min-width: @screen-sm){ font-size: 24px;}
+}
 .fz-xxsmall{ font-size: 10px; }
 
 // -------------------------

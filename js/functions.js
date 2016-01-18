@@ -29,10 +29,9 @@ function imgToSvg(){
     });
 } //imgToSvg
 
-
-/*------------------------------------*\
-    #TOGGLE FUNCTIONS
-\*------------------------------------*/
+function addSourceToVideo(element, src, type) {
+    element.html('<source src="'+src+'" type="'+type+'"></source>');
+}
 
 function loadVideo(){
     $('.js-video-container').load( "ajax/video.html .js-video-element" );
@@ -42,3 +41,10 @@ function emptyVideo(){
     $('.js-video-container').empty();
 }
 
+//Compartir redes
+
+function loadRedes(){
+    $('.js-publicar-container').load( "ajax/comparte.html .js-publicar-element", function(){
+        imgToSvg();
+    });
+}
